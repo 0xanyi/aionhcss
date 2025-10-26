@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* Aion Health Care Brand CSS Variables */
+:root {
+  /* Primary Colors */
+  --primary-navy: #002B7F;
+  --secondary-coral: #FF6B6B;
+  --accent-blue: #1E40AF;
+  
+  /* Text Colors */
+  --text-dark: #1F2937;
+  --text-light: #6B7280;
+  --text-white: #FFFFFF;
+  
+  /* Background Colors */
+  --background: #FFFFFF;
+  --background-light: #F9FAFB;
+  --background-gray: #F3F4F6;
+  
+  /* Border Colors */
+  --border-light: #E5E7EB;
+  --border-medium: #D1D5DB;
+  --border-dark: #9CA3AF;
+  
+  /* Success & Error Colors */
+  --success-green: #10B981;
+  --error-red: #EF4444;
+  --warning-yellow: #F59E0B;
+  --info-blue: #3B82F6;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-dark: #F9FAFB;
+    --text-light: #D1D5DB;
+    --background: #111827;
+    --background-light: #1F2937;
+    --border-light: #374151;
+    --border-medium: #4B5563;
+  }
+}
+
+/* Aion Brand Typography */
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Aion Global Styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+ line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+h2 {
+  font-size: 2rem;
+ line-height: 1.3;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+/* Aion Button Styles */
+.btn {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  font-weight: 600;
+ border-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+ padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-coral);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--secondary-coral) 90%, black);
+}
+
+.btn-secondary {
+  font-weight: 600;
+ border-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+ line-height: 1.5;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-navy);
+  color: white;
+}
+
+.btn-outline {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 200ms ease-in-out;
+ padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+ border: 2px solid var(--secondary-coral);
+  color: var(--secondary-coral);
+}
+
+.btn-outline:hover {
+  background-color: var(--secondary-coral);
+  color: white;
+}
+
+/* Aion Card Styles - Enhanced modern design */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
+  transition: all 300ms ease-in-out;
+  background-color: var(--background);
+  border: 1px solid var(--border-light);
+  padding: 2rem;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Aion Section Styles - Modern generous spacing */
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: max(1rem, 6vw);
+  padding-right: max(1rem, 6vw);
+}
+
+.section-sm {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: max(1rem, 6vw);
+  padding-right: max(1rem, 6vw);
+}
+
+.section-xs {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: max(1rem, 6vw);
+  padding-right: max(1rem, 6vw);
+}
+
+/* Accessibility Enhancements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles for accessibility */
+.focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.5);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border-light: #000000;
+    --border-medium: #333333;
+    --border-dark: #666666;
+  }
+  
+  .btn {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+code {
+  font-family: 'Inter', source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background-color: var(--background-light);
+  padding: 0.25rem 0.5rem;
+ border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
