@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import React from 'react'
 import { createSEOHead, defaultSEOConfigs } from '../utils/seo'
+import { Home, BedDouble, Building2, Utensils, Sparkles, Heart, Pill, PawPrint, Car, PartyPopper, CheckCircle, ArrowRight, Clock } from 'lucide-react'
 
 export const Route = createFileRoute('/services')({
   head: () => createSEOHead(defaultSEOConfigs.services),
@@ -9,31 +10,44 @@ export const Route = createFileRoute('/services')({
 
 function Services() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-aion-blue/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-heading-1 text-aion-navy mb-6">
-            Our Comprehensive Services
-          </h1>
-          <p className="text-body-lg text-aion-gray-700 max-w-4xl mx-auto mb-8">
-            We offer a wide range of care services designed to support independence
-            and improve quality of life for individuals and families across Essex.
-            Our personalized approach ensures that each client receives the exact
-            care they need, when they need it.
-          </p>
-          
-          {/* Service Finder */}
-          <div className="bg-white rounded-aion-lg shadow-aion p-6 max-w-2xl mx-auto">
-            <h3 className="text-heading-3 text-aion-navy mb-4">
-              Not sure which service is right for you?
-            </h3>
-            <p className="text-body text-aion-gray-600 mb-6">
-              Contact us for a free consultation to determine the best care solution for your needs
+    <div className="min-h-screen bg-white">
+      {/* Modern Hero Section */}
+      <section className="hero-section" style={{ minHeight: '500px' }}>
+        <img
+          src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=1920&h=800&fit=crop"
+          alt="Healthcare services"
+          className="hero-image-overlay"
+        />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24">
+          <div className="animate-fadeInUp">
+            <span className="badge text-sm mb-6 inline-block bg-white/20 text-white border-white/30">
+              Comprehensive Care Solutions
+            </span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
+              Personalized Services<br />
+              <span className="bg-gradient-to-r from-aion-coral to-pink-400 bg-clip-text text-transparent">
+                Tailored to Your Needs
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto mb-12 leading-relaxed">
+              From daily assistance to 24/7 comprehensive support, we provide care services
+              that empower independence and enhance quality of life across Essex and East England.
             </p>
-            <a href="#contact" className="btn-primary inline-block">
-              Get Personalized Recommendations
-            </a>
+
+            {/* Service Finder Card */}
+            <div className="card-glass max-w-2xl mx-auto p-8 rounded-3xl">
+              <h3 className="text-2xl font-bold text-aion-navy mb-4">
+                Need Help Choosing?
+              </h3>
+              <p className="text-aion-gray-700 mb-6">
+                Get a free consultation to discover the perfect care solution for your unique needs
+              </p>
+              <a href="/contact" className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
+                Get Free Consultation
+                <ArrowRight size={20} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
