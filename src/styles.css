@@ -93,12 +93,12 @@ p {
   color: var(--text-light);
 }
 
-/* Aion Button Styles */
+/* Aion Button Styles - Modern enhanced */
 .btn {
   font-weight: 600;
-  border-radius: 0.5rem;
-  transition: all 200ms ease-in-out;
-  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.875rem 1.75rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -108,13 +108,33 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .btn-primary {
   font-weight: 600;
- border-radius: 0.5rem;
-  transition: all 200ms ease-in-out;
- padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.875rem 1.75rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -124,23 +144,31 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: var(--secondary-coral);
+  background: linear-gradient(135deg, var(--secondary-coral) 0%, #FF5252 100%);
   color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--secondary-coral) 90%, black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 .btn-secondary {
   font-weight: 600;
- border-radius: 0.5rem;
-  transition: all 200ms ease-in-out;
-  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.875rem 1.75rem;
   border: none;
   cursor: pointer;
   font-size: 1rem;
- line-height: 1.5;
+  line-height: 1.5;
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -149,19 +177,23 @@ p {
   background-color: transparent;
   color: var(--primary-navy);
   border: 2px solid var(--primary-navy);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-secondary:hover {
   background-color: var(--primary-navy);
   color: white;
+  box-shadow: 0 4px 15px rgba(0, 43, 127, 0.3);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
   font-weight: 600;
-  border-radius: 0.5rem;
-  transition: all 200ms ease-in-out;
- padding: 0.75rem 1.5rem;
-  border: none;
+  border-radius: 0.75rem;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.875rem 1.75rem;
+  border: 2px solid var(--secondary-coral);
   cursor: pointer;
   font-size: 1rem;
   line-height: 1.5;
@@ -170,30 +202,61 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
- border: 2px solid var(--secondary-coral);
   color: var(--secondary-coral);
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-outline:hover {
   background-color: var(--secondary-coral);
   color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Aion Card Styles - Enhanced modern design */
 .card {
   background-color: white;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border: 1px solid var(--border-light);
-  transition: all 300ms ease-in-out;
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--background);
-  border: 1px solid var(--border-light);
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-coral), var(--accent-blue));
+  transform: scaleX(0);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 107, 0.3);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Glassmorphism card variant */
+.card-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
 }
 
 /* Aion Section Styles - Modern generous spacing */
@@ -264,6 +327,291 @@ code {
     monospace;
   background-color: var(--background-light);
   padding: 0.25rem 0.5rem;
- border-radius: 0.25rem;
+  border-radius: 0.25rem;
   font-size: 0.875rem;
+}
+
+/* Modern Gradient Backgrounds */
+.gradient-hero {
+  background: linear-gradient(135deg, #002B7F 0%, #1E40AF 100%);
+}
+
+.gradient-coral {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
+}
+
+.gradient-soft {
+  background: linear-gradient(135deg, rgba(0, 43, 127, 0.03) 0%, rgba(255, 107, 107, 0.03) 100%);
+}
+
+.gradient-overlay {
+  background: linear-gradient(135deg, rgba(0, 43, 127, 0.9) 0%, rgba(30, 64, 175, 0.9) 100%);
+}
+
+/* Modern Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hero Section Modern Styles */
+.hero-section {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 43, 127, 0.95) 0%, rgba(30, 64, 175, 0.95) 100%);
+  z-index: 1;
+}
+
+.hero-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Image Styles */
+.img-modern {
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-modern:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Container */
+.icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+  margin-bottom: 1rem;
+  transition: all 300ms ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.2) 0%, rgba(30, 64, 175, 0.2) 100%);
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+  color: var(--primary-navy);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+/* Stat Counter */
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 300ms ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--secondary-coral) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 5rem;
+  color: rgba(255, 107, 107, 0.1);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Service Card Enhanced */
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card-content {
+  padding: 2rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #002B7F 0%, #1E40AF 100%);
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+/* Divider */
+.divider {
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, var(--secondary-coral) 50%, transparent 100%);
+  margin: 4rem 0;
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 3px solid rgba(255, 107, 107, 0.1);
+  border-top-color: var(--secondary-coral);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
