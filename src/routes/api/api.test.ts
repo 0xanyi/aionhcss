@@ -20,7 +20,7 @@ vi.mock('../../utils/formUtils', () => ({
     parse: vi.fn().mockReturnValue({
       name: 'Test User',
       email: 'test@example.com',
-      phone: '07368195705',
+      phone: '0124 5823 377',
       service: 'personal-care',
       urgency: 'soon',
       message: 'Test message',
@@ -33,7 +33,7 @@ vi.mock('../../utils/formUtils', () => ({
       firstName: 'Jane',
       lastName: 'Smith',
       email: 'jane@example.com',
-      phone: '07368195705',
+      phone: '0124 5823 377',
       position: 'care-worker',
       experience: 3,
       qualifications: 'NVQ Level 2',
@@ -48,7 +48,7 @@ vi.mock('../../utils/formUtils', () => ({
       fullName: 'Robert Wilson',
       age: 75,
       email: 'robert@example.com',
-      phone: '07368195705',
+      phone: '0124 5823 377',
       careType: ['personal-care'],
       urgency: 'urgent',
       healthConditions: 'Diabetes',
@@ -81,7 +81,7 @@ describe('API Endpoints', () => {
         body: JSON.stringify({
           name: 'Test User',
           email: 'test@example.com',
-          phone: '07368195705',
+          phone: '0124 5823 377',
           service: 'personal-care',
           urgency: 'soon',
           message: 'Test message',
@@ -133,7 +133,7 @@ describe('API Endpoints', () => {
         body: JSON.stringify({
           name: 'Test User',
           email: 'test@example.com',
-          phone: '07368195705'
+          phone: '0124 5823 377'
         })
       })
 
@@ -156,7 +156,7 @@ describe('API Endpoints', () => {
       formData.append('firstName', 'Jane')
       formData.append('lastName', 'Smith')
       formData.append('email', 'jane@example.com')
-      formData.append('phone', '07368195705')
+      formData.append('phone', '0124 5823 377')
       formData.append('position', 'care-worker')
       formData.append('experience', '3')
       formData.append('availability', 'full-time')
@@ -227,7 +227,7 @@ describe('API Endpoints', () => {
           fullName: 'Robert Wilson',
           age: 75,
           email: 'robert@example.com',
-          phone: '07368195705',
+          phone: '0124 5823 377',
           careType: ['personal-care', 'medication-management'],
           urgency: 'urgent',
           healthConditions: 'Diabetes and mobility issues',
@@ -252,7 +252,7 @@ describe('API Endpoints', () => {
         fullName: 'Test User',
         age: 17, // Too young
         email: 'test@example.com',
-        phone: '07368195705',
+        phone: '0124 5823 377',
         careType: ['personal-care'],
         urgency: 'soon',
         healthConditions: 'None',
@@ -281,7 +281,7 @@ describe('API Endpoints', () => {
           fullName: 'Test User',
           age: 75,
           email: 'test@example.com',
-          phone: '07368195705',
+          phone: '0124 5823 377',
           careType: ['personal-care'],
           urgency: 'urgent',
           healthConditions: 'None',
@@ -321,7 +321,7 @@ describe('API Endpoints', () => {
           fullName: 'Test User',
           age: 75,
           email: 'test@example.com',
-          phone: '07368195705',
+          phone: '0124 5823 377',
           careType: ['personal-care'],
           urgency: 'urgent',
           healthConditions: 'None',

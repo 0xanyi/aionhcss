@@ -15,12 +15,12 @@ initializeWebsite()
 function App() {
   return (
     <>
-      {/* Stunning Modern Hero Section with Turquoise Gradient */}
+      {/* Stunning Modern Hero Section with Primary Blue Gradient */}
       <section className="hero-section relative overflow-hidden min-h-[90vh]">
-        {/* Beautiful Turquoise Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-aion-turquoise-600/95 via-aion-teal-500/90 to-aion-navy-500/95"></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(97, 218, 251, 0.3) 0%, transparent 50%)'}}></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(36, 123, 160, 0.2) 0%, transparent 50%)'}}></div>
+        {/* Beautiful Blue Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-aion-primary-500/95 via-aion-primary-600/90 to-aion-dark-800/95"></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(0, 0, 113, 0.3) 0%, transparent 50%)'}}></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(255, 91, 92, 0.2) 0%, transparent 50%)'}}></div>
 
         {/* Stunning Healthcare Hero Image */}
         <img
@@ -42,7 +42,7 @@ function App() {
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8 text-white drop-shadow-lg">
                 Care That Respects,<br />
-                <span className="text-gradient bg-gradient-to-r from-white via-aion-mint-300 to-aion-turquoise-300">
+                <span className="text-gradient bg-gradient-to-r from-white via-aion-secondary-200 to-aion-secondary-300">
                   Services That Empower
                 </span>
               </h1>
@@ -54,19 +54,19 @@ function App() {
 
               {/* Enhanced Trust Indicators */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-12">
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
                   <div className="bg-white/20 p-2 rounded-xl">
                     <Stethoscope className="text-white" size={24} />
                   </div>
                   <span className="font-semibold text-white text-lg">CQC Registered</span>
                 </div>
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
                   <div className="bg-white/20 p-2 rounded-xl">
                     <Clock className="text-white" size={24} />
                   </div>
                   <span className="font-semibold text-white text-lg">24/7 Support</span>
                 </div>
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
                   <div className="bg-white/20 p-2 rounded-xl">
                     <MapPin className="text-white" size={24} />
                   </div>
@@ -78,13 +78,13 @@ function App() {
               <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-8">
                 <a
                   href="/contact"
-                  className="group relative px-10 py-5 text-lg font-bold bg-white text-aion-teal-600 rounded-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 overflow-hidden"
+                  className="group relative px-10 py-5 text-lg font-bold bg-white text-aion-primary-500 rounded-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     Get Started Today
                     <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-aion-mint-300 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-aion-secondary-200 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </a>
                 <a
                   href="#services"
@@ -98,13 +98,13 @@ function App() {
               {/* Enhanced Phone Contact */}
               <div className="text-center lg:text-left">
                 <a
-                  href="tel:07368195705"
+                  href="tel:0124 5823 377"
                   className="inline-flex items-center gap-3 text-white hover:text-aion-mint-200 font-bold text-xl transition-all duration-300 group"
                 >
                   <div className="bg-white/25 backdrop-blur-sm p-4 rounded-full group-hover:bg-white/35 transition-all group-hover:scale-110">
                     <Phone size={24} />
                   </div>
-                  <span className="drop-shadow">Call: 07368195705</span>
+                  <span className="drop-shadow">Call: 0124 5823 377</span>
                 </a>
               </div>
             </div>
@@ -144,22 +144,22 @@ function App() {
         </div>
       </section>
 
-      {/* Services Overview - Redesigned with Turquoise Theme */}
-      <section id="services" className="py-32 relative overflow-hidden bg-gradient-to-b from-white via-aion-turquoise-50 to-white">
+      {/* Services Overview - Redesigned with New Brand Theme */}
+      <section id="services" className="py-32 relative overflow-hidden bg-gradient-to-b from-white via-aion-primary-50 to-white">
         {/* Beautiful Decorative Elements */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-aion-turquoise-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-aion-teal-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-aion-mint-400/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-aion-primary-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-aion-secondary-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-aion-primary-300/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="inline-block mb-6 animate-fadeIn">
-              <span className="inline-flex items-center gap-2 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 text-white font-semibold px-6 py-3 rounded-full text-sm shadow-lg">
+              <span className="inline-flex items-center gap-2 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-400 text-white font-semibold px-6 py-3 rounded-full text-sm shadow-lg">
                 <Sparkles size={16} />
                 Our Services
               </span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black bg-gradient-to-r from-aion-navy-500 via-aion-teal-600 to-aion-turquoise-600 bg-clip-text text-transparent mb-8">
+            <h2 className="text-5xl md:text-6xl font-black bg-gradient-to-r from-aion-primary-500 via-aion-dark-800 to-aion-secondary-500 bg-clip-text text-transparent mb-8">
               Comprehensive Care Solutions
             </h2>
             <p className="text-xl text-aion-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -295,25 +295,25 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="stat-card border border-aion-turquoise-200 hover:border-aion-turquoise-400">
-              <div className="bg-gradient-to-br from-aion-turquoise-50 to-aion-turquoise-100 p-4 rounded-2xl inline-block mb-4">
-                <MapPin size={48} className="text-aion-turquoise-500" />
+            <div className="stat-card border border-aion-primary-200 hover:border-aion-primary-400">
+              <div className="bg-gradient-to-br from-aion-primary-50 to-aion-primary-100 p-4 rounded-2xl inline-block mb-4">
+                <MapPin size={48} className="text-aion-primary-500" />
               </div>
-              <div className="stat-number bg-gradient-to-r from-aion-turquoise-500 to-aion-teal-500 bg-clip-text text-transparent">90</div>
+              <div className="stat-number bg-gradient-to-r from-aion-primary-500 to-aion-primary-600 bg-clip-text text-transparent">90</div>
               <div className="text-aion-gray-700 font-semibold text-lg">Mile Coverage Radius</div>
             </div>
-            <div className="stat-card border border-aion-teal-200 hover:border-aion-teal-400">
-              <div className="bg-gradient-to-br from-aion-teal-50 to-aion-teal-100 p-4 rounded-2xl inline-block mb-4">
-                <Building2 size={48} className="text-aion-teal-500" />
+            <div className="stat-card border border-aion-secondary-200 hover:border-aion-secondary-400">
+              <div className="bg-gradient-to-br from-aion-secondary-50 to-aion-secondary-100 p-4 rounded-2xl inline-block mb-4">
+                <Building2 size={48} className="text-aion-secondary-500" />
               </div>
-              <div className="stat-number bg-gradient-to-r from-aion-teal-500 to-aion-navy-500 bg-clip-text text-transparent">500+</div>
+              <div className="stat-number bg-gradient-to-r from-aion-secondary-500 to-aion-secondary-600 bg-clip-text text-transparent">500+</div>
               <div className="text-aion-gray-700 font-semibold text-lg">Families Supported</div>
             </div>
-            <div className="stat-card border border-aion-navy-200 hover:border-aion-navy-400">
-              <div className="bg-gradient-to-br from-aion-navy-50 to-aion-navy-100 p-4 rounded-2xl inline-block mb-4">
-                <Clock size={48} className="text-aion-navy-500" />
+            <div className="stat-card border border-aion-dark-200 hover:border-aion-dark-400">
+              <div className="bg-gradient-to-br from-aion-dark-50 to-aion-dark-100 p-4 rounded-2xl inline-block mb-4">
+                <Clock size={48} className="text-aion-dark-700" />
               </div>
-              <div className="stat-number bg-gradient-to-r from-aion-navy-500 to-aion-turquoise-500 bg-clip-text text-transparent">24/7</div>
+              <div className="stat-number bg-gradient-to-r from-aion-dark-700 to-aion-primary-500 bg-clip-text text-transparent">24/7</div>
               <div className="text-aion-gray-700 font-semibold text-lg">Always Available</div>
             </div>
           </div>
@@ -365,11 +365,11 @@ function App() {
         </div>
       </section>
 
-      {/* Stunning Final CTA with Turquoise Gradient */}
+      {/* Stunning Final CTA with Primary Blue Gradient */}
       <section className="relative mx-4 sm:mx-6 lg:mx-8 my-20 rounded-3xl overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-aion-turquoise-500 via-aion-teal-600 to-aion-navy-600"></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(159, 237, 215, 0.2) 0%, transparent 50%)'}}></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(97, 218, 251, 0.2) 0%, transparent 50%)'}}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-aion-primary-500 via-aion-dark-800 to-aion-primary-600"></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(0, 0, 113, 0.2) 0%, transparent 50%)'}}></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(255, 91, 92, 0.2) 0%, transparent 50%)'}}></div>
 
         <div className="relative max-w-4xl mx-auto px-8 py-20 text-center z-10">
           <h2 className="text-5xl md:text-6xl font-black text-white mb-6 drop-shadow-lg">
@@ -387,9 +387,9 @@ function App() {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </span>
             </a>
-            <a href="tel:07368195705" className="px-10 py-5 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3">
+            <a href="tel:0124 5823 377" className="px-10 py-5 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3">
               <Phone size={24} />
-              Call: 07368195705
+              Call: 0124 5823 377
             </a>
           </div>
 

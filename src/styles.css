@@ -1,47 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-/* Aion Health Care Brand CSS Variables - Based on Logo Color #61DAFB */
+/* Aion Health Care Brand CSS Variables */
 :root {
-  /* Primary Brand Colors - From Logo */
-  --primary-turquoise: #61DAFB;
-  --primary-turquoise-light: #9FEDD7;
-  --primary-turquoise-dark: #3FBFDF;
+  /* Primary Brand Colors */
+  --primary-blue: #000071;
+  --primary-blue-light: #1a1a8f;
+  --primary-blue-dark: #000052;
 
   /* Secondary Brand Colors */
-  --secondary-navy: #0A2463;
-  --secondary-navy-light: #1A3A7F;
-  --secondary-coral: #FF6B35;
-  --secondary-coral-light: #FF8856;
+  --secondary-red: #ff5b5c;
+  --secondary-red-light: #ff7d7e;
+  --secondary-red-dark: #ff3d3e;
+
+  /* Dark Neutral */
+  --dark-neutral: #161616;
 
   /* Accent Colors */
-  --accent-teal: #247BA0;
-  --accent-teal-light: #3A9BC0;
-  --accent-mint: #C8F7DC;
-  --accent-peach: #FFE5D9;
+  --accent-blue-light: #3333cc;
+  --accent-red-light: #ff8989;
 
   /* Text Colors */
-  --text-dark: #1A1A2E;
+  --text-dark: #161616;
   --text-medium: #444654;
   --text-light: #6B7280;
   --text-white: #FFFFFF;
 
   /* Background Colors */
   --background: #FFFFFF;
-  --background-light: #F8FEFF;
-  --background-gray: #F3F7F9;
-  --background-gradient: linear-gradient(135deg, #61DAFB 0%, #247BA0 100%);
+  --background-light: #F8F9FA;
+  --background-gray: #F3F4F6;
+  --background-gradient: linear-gradient(135deg, #000071 0%, #1a1a8f 100%);
 
   /* Border Colors */
-  --border-light: #E1F5FE;
-  --border-medium: #B3E5FC;
-  --border-dark: #81D4FA;
+  --border-light: #E1E5FF;
+  --border-medium: #B3BDF9;
+  --border-dark: #7A88FF;
 
   /* Success & Error Colors */
   --success-green: #10B981;
-  --error-red: #EF4444;
+  --error-red: #ff5b5c;
   --warning-yellow: #F59E0B;
-  --info-blue: #61DAFB;
+  --info-blue: #000071;
 }
 
 /* Dark mode support */
@@ -158,17 +158,17 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--primary-turquoise) 0%, var(--accent-teal) 100%);
+  background: linear-gradient(135deg, var(--secondary-red) 0%, #ff7d7e 100%);
   color: white;
-  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 91, 92, 0.3);
   position: relative;
   overflow: hidden;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(97, 218, 251, 0.5);
-  background: linear-gradient(135deg, var(--primary-turquoise-dark) 0%, var(--accent-teal-light) 100%);
+  box-shadow: 0 8px 25px rgba(255, 91, 92, 0.5);
+  background: linear-gradient(135deg, var(--secondary-red-dark) 0%, var(--secondary-red) 100%);
 }
 
 .btn-primary:active {
@@ -190,8 +190,8 @@ p {
   justify-content: center;
   gap: 0.5rem;
   background-color: transparent;
-  color: var(--secondary-navy);
-  border: 2px solid var(--primary-turquoise);
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
   position: relative;
   overflow: hidden;
 }
@@ -199,8 +199,8 @@ p {
 .btn-secondary:hover {
   background: var(--background-gradient);
   color: white;
-  border-color: var(--primary-turquoise);
-  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.3);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(0, 0, 113, 0.3);
   transform: translateY(-2px);
 }
 
@@ -209,7 +209,7 @@ p {
   border-radius: 0.75rem;
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0.875rem 1.75rem;
-  border: 2px solid var(--primary-turquoise);
+  border: 2px solid var(--secondary-red);
   cursor: pointer;
   font-size: 1rem;
   line-height: 1.5;
@@ -218,17 +218,17 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  color: var(--primary-turquoise);
+  color: var(--secondary-red);
   background-color: transparent;
   position: relative;
   overflow: hidden;
 }
 
 .btn-outline:hover {
-  background: var(--background-gradient);
+  background: linear-gradient(135deg, var(--secondary-red) 0%, #ff7d7e 100%);
   color: white;
-  border-color: var(--accent-teal);
-  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.3);
+  border-color: var(--secondary-red);
+  box-shadow: 0 4px 15px rgba(255, 91, 92, 0.3);
   transform: translateY(-2px);
 }
 
@@ -252,15 +252,15 @@ p {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-turquoise), var(--accent-teal));
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-red));
   transform: scaleX(0);
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
-  box-shadow: 0 20px 25px -5px rgba(97, 218, 251, 0.15), 0 10px 10px -5px rgba(97, 218, 251, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 113, 0.15), 0 10px 10px -5px rgba(0, 0, 113, 0.1);
   transform: translateY(-4px);
-  border-color: rgba(97, 218, 251, 0.3);
+  border-color: rgba(0, 0, 113, 0.3);
 }
 
 .card:hover::before {
@@ -350,23 +350,23 @@ code {
 
 /* Modern Gradient Backgrounds */
 .gradient-hero {
-  background: linear-gradient(135deg, #0A2463 0%, #247BA0 100%);
+  background: linear-gradient(135deg, #000071 0%, #1a1a8f 100%);
 }
 
 .gradient-coral {
-  background: linear-gradient(135deg, #FF6B35 0%, #FF8856 100%);
+  background: linear-gradient(135deg, #ff5b5c 0%, #ff7d7e 100%);
 }
 
 .gradient-soft {
-  background: linear-gradient(135deg, rgba(97, 218, 251, 0.05) 0%, rgba(36, 123, 160, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 113, 0.05) 0%, rgba(255, 91, 92, 0.05) 100%);
 }
 
 .gradient-overlay {
-  background: linear-gradient(135deg, rgba(10, 36, 99, 0.9) 0%, rgba(36, 123, 160, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 113, 0.9) 0%, rgba(22, 22, 22, 0.9) 100%);
 }
 
-.gradient-turquoise {
-  background: linear-gradient(135deg, #61DAFB 0%, #9FEDD7 100%);
+.gradient-primary {
+  background: linear-gradient(135deg, #000071 0%, #1a1a8f 100%);
 }
 
 /* Modern Animations */
@@ -443,10 +443,10 @@ code {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(97, 218, 251, 0.4);
+    box-shadow: 0 0 20px rgba(255, 91, 92, 0.4);
   }
   50% {
-    box-shadow: 0 0 30px rgba(97, 218, 251, 0.7);
+    box-shadow: 0 0 30px rgba(255, 91, 92, 0.7);
   }
 }
 

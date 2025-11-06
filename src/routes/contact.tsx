@@ -29,7 +29,7 @@ function Contact() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center gap-2 text-aion-coral">
                 <span className="text-2xl">📞</span>
-                <span className="text-xl font-semibold">07368195705</span>
+                <span className="text-xl font-semibold">0124 5823 377</span>
               </div>
               <span className="text-aion-gray-500">|</span>
               <div className="flex items-center gap-2 text-aion-blue">
@@ -58,7 +58,7 @@ function Contact() {
                 <ContactMethod
                   icon="📞"
                   title="Phone"
-                  contact="07368195705"
+                  contact="0124 5823 377"
                   description="24/7 Support Available"
                   type="phone"
                 />
@@ -218,11 +218,11 @@ function Contact() {
             <h2 className="text-heading-2 mb-4">Emergency Care Needed?</h2>
             <p className="text-lg mb-6 opacity-90">
               For urgent care needs or emergency situations, call us immediately at
-              <span className="font-bold">07368195705</span>
+              <span className="font-bold">0124 5823 377</span>
             </p>
             <div className="inline-flex items-center gap-4 bg-white/20 rounded-aion px-6 py-3">
               <span className="text-2xl">📞</span>
-              <span className="text-xl font-bold">07368195705</span>
+              <span className="text-xl font-bold">0124 5823 377</span>
               <span className="text-sm opacity-80">Available 24/7</span>
             </div>
           </div>

@@ -116,10 +116,10 @@ function Footer() {
                   <span className="font-semibold text-sm">24/7 Emergency</span>
                 </div>
                 <a 
-                  href="tel:07368195705"
+                  href="tel:0124 5823 377"
                   className="text-xl font-bold text-aion-navy hover:text-aion-coral transition-colors"
                 >
-                  07368195705
+                  0124 5823 377
                 </a>
               </div>
 

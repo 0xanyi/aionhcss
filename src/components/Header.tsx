@@ -49,73 +49,73 @@ function Header() {
         <nav className="hidden lg:flex lg:ml-auto lg:items-center lg:space-x-8">
           <Link
             to="/"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Home
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/about"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             About
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/services"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Services
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/clients"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Who We Serve
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/resources"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Resources
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/contact"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Contact
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/careers"
-            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-primary-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-turquoise-500 font-semibold',
+              className: 'text-aion-primary-500 font-semibold',
             }}
           >
             Careers
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-primary-400 to-aion-secondary-500 transition-all group-hover:w-full"></span>
           </Link>
         </nav>
 
@@ -131,11 +131,11 @@ function Header() {
         {/* Contact Button - Desktop Only */}
         <div className="hidden lg:flex lg:ml-6">
           <a
-            href="tel:07368195705"
+            href="tel:0124 5823 377"
             className="btn-primary flex items-center gap-2 px-5 py-2.5 text-sm font-semibold"
           >
             <Phone size={18} />
-            <span>07368195705</span>
+            <span>0124 5823 377</span>
           </a>
         </div>
       </header>
@@ -150,7 +150,7 @@ function Header() {
 
       {/* Mobile Sidebar with Beautiful Turquoise Gradient */}
       <aside
-        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-aion-turquoise-600 via-aion-teal-600 to-aion-navy-700 text-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-aion-primary-500 via-aion-primary-600 to-aion-dark-800 text-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -266,12 +266,12 @@ function Header() {
           {/* Mobile Contact */}
           <div className="mt-6 pt-6 border-t border-white/10">
             <a
-              href="tel:07368195705"
+              href="tel:0124 5823 377"
               className="btn-primary w-full flex items-center justify-center gap-3 py-4 text-base font-bold"
               onClick={() => setIsOpen(false)}
             >
               <Phone size={20} />
-              <span>Call: 07368195705</span>
+              <span>Call: 0124 5823 377</span>
             </a>
           </div>
         </nav>

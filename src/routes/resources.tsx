@@ -86,7 +86,7 @@ function Resources() {
             />
             <FAQItem
               question="What happens in an emergency?"
-              answer="We provide 24/7 emergency support. If you need urgent assistance, call us immediately at 07368195705. Our emergency response team is available around the clock to provide immediate help and coordinate additional support as needed."
+              answer="We provide 24/7 emergency support. If you need urgent assistance, call us immediately at 0124 5823 377. Our emergency response team is available around the clock to provide immediate help and coordinate additional support as needed."
             />
             <FAQItem
               question="Can services be changed or cancelled?"

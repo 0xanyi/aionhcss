@@ -37,9 +37,9 @@ const Clients = () => {
             From elderly care to children's services, we're here to support you and your family.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:07368195705" className="btn-primary">
+            <a href="tel:0124 5823 377" className="btn-primary">
               <Phone size={20} />
-              Call: 07368195705
+              Call: 0124 5823 377
             </a>
             <Link to="/contact" className="btn-secondary">
               Get Started Today
@@ -332,9 +332,9 @@ const Clients = () => {
             Every person and situation is unique. Let's discuss your specific needs and create a personalized care plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:07368195705" className="btn-primary">
+            <a href="tel:0124 5823 377" className="btn-primary">
               <Phone size={20} />
-              Call: 07368195705
+              Call: 0124 5823 377
             </a>
             <Link to="/contact" className="btn-outline">
               Contact Us Today

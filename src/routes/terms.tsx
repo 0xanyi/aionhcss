@@ -307,7 +307,7 @@ function Terms() {
               <div className="space-y-4">
                 <div className="flex items-center justify-center gap-2 text-aion-navy">
                   <span className="text-lg">📞</span>
-                  <span className="font-semibold">07368195705</span>
+                  <span className="font-semibold">0124 5823 377</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-aion-navy">
                   <span className="text-lg">📧</span>
