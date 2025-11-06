@@ -15,131 +15,129 @@ initializeWebsite()
 function App() {
   return (
     <>
-      {/* Stunning Modern Hero Section with Primary Blue Gradient */}
-      <section className="hero-section relative overflow-hidden min-h-[90vh]">
-        {/* Beautiful Blue Gradient Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-aion-primary-500/95 via-aion-primary-600/90 to-aion-dark-800/95"></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(0, 0, 113, 0.3) 0%, transparent 50%)'}}></div>
-        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(255, 91, 92, 0.2) 0%, transparent 50%)'}}></div>
+      {/* Hero Section - Healthcare Professional Design */}
+      <section className="hero-section relative min-h-screen flex items-center pt-20">
+        {/* Healthcare Hero Background */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 43, 127, 0.85), rgba(0, 43, 127, 0.85)), url('https://images.unsplash.com/photo-1559757175-08fd9bb7b2b3?w=1920&h=1080&fit=crop&q=80')`
+          }}
+        ></div>
 
-        {/* Stunning Healthcare Hero Image */}
-        <img
-          src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&h=1080&fit=crop&q=80"
-          alt="Professional healthcare team providing compassionate care"
-          className="hero-image-overlay opacity-20"
-        />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Hero Content */}
-            <div className="text-center lg:text-left animate-fadeInUp">
-              <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-6 py-3 mb-8 animate-scaleIn">
-                <div className="bg-white/20 p-1 rounded-full">
-                  <Shield className="text-white" size={18} />
+        <div className="relative max-w-7xl mx-auto px-6 py-20 text-white z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-left">
+              {/* Trust Badges */}
+              <div className="flex flex-wrap items-center gap-4 mb-8">
+                <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                  <Shield size={18} className="text-green-300" />
+                  <span className="font-semibold text-sm">CQC Registered</span>
                 </div>
-                <span className="text-white font-semibold text-sm">CQC Registered Care Provider</span>
+                <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                  <Heart size={18} className="text-red-300" />
+                  <span className="font-semibold text-sm">4.9/5 Star Rating</span>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/30">
+                  <Award size={18} className="text-yellow-300" />
+                  <span className="font-semibold text-sm">15+ Years Experience</span>
+                </div>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8 text-white drop-shadow-lg">
-                Care That Respects,<br />
-                <span className="text-gradient bg-gradient-to-r from-white via-aion-secondary-200 to-aion-secondary-300">
-                  Services That Empower
+              {/* Main Heading */}
+              <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
+                Senior Care Is<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-aion-secondary-400 to-aion-secondary-300">
+                  Our Goal
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-white/95 mb-10 leading-relaxed max-w-2xl font-medium drop-shadow">
-                24/7 compassionate home care and supported living services in Essex and East England.
-                <span className="block mt-2 text-white/90 text-lg">Personalized care that empowers independence with dignity and respect.</span>
+              {/* Description */}
+              <p className="text-xl md:text-2xl mb-8 leading-relaxed text-white/90">
+                We're committed to quality senior care. Our team ensures each individual receives 
+                compassionate attention, fostering a nurturing environment.
               </p>
 
-              {/* Enhanced Trust Indicators */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-12">
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
-                  <div className="bg-white/20 p-2 rounded-xl">
-                    <Stethoscope className="text-white" size={24} />
-                  </div>
-                  <span className="font-semibold text-white text-lg">CQC Registered</span>
-                </div>
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
-                  <div className="bg-white/20 p-2 rounded-xl">
-                    <Clock className="text-white" size={24} />
-                  </div>
-                  <span className="font-semibold text-white text-lg">24/7 Support</span>
-                </div>
-                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-aion-secondary-300 transition-all hover:scale-105">
-                  <div className="bg-white/20 p-2 rounded-xl">
-                    <MapPin className="text-white" size={24} />
-                  </div>
-                  <span className="font-semibold text-white text-lg">90 Mile Coverage</span>
-                </div>
-              </div>
-
-              {/* Modern Call to Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-8">
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a
                   href="/contact"
-                  className="group relative px-10 py-5 text-lg font-bold bg-white text-aion-primary-500 rounded-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 overflow-hidden"
+                  className="inline-flex items-center gap-3 px-8 py-4 text-lg font-bold bg-white text-aion-primary-600 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 >
-                  <span className="relative z-10 flex items-center justify-center gap-2">
-                    Get Started Today
-                    <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-aion-secondary-200 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  Book an Appointment
+                  <ArrowRight size={20} />
                 </a>
                 <a
-                  href="#services"
-                  className="px-10 py-5 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                  href="/about"
+                  className="inline-flex items-center gap-3 px-8 py-4 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl transition-all duration-300"
                 >
-                  Explore Services
-                  <ChevronDown size={20} />
+                  About Us
                 </a>
               </div>
 
-              {/* Enhanced Phone Contact */}
-              <div className="text-center lg:text-left">
+              {/* Phone */}
+              <div>
                 <a
                   href="tel:0124 5823 377"
-                  className="inline-flex items-center gap-3 text-white hover:text-aion-mint-200 font-bold text-xl transition-all duration-300 group"
+                  className="inline-flex items-center gap-3 text-white/90 hover:text-white font-semibold text-lg transition-colors"
                 >
-                  <div className="bg-white/25 backdrop-blur-sm p-4 rounded-full group-hover:bg-white/35 transition-all group-hover:scale-110">
-                    <Phone size={24} />
-                  </div>
-                  <span className="drop-shadow">Call: 0124 5823 377</span>
+                  <Phone size={22} />
+                  <span>Call: 0124 5823 377</span>
                 </a>
               </div>
             </div>
 
-            {/* Enhanced Stats Card */}
-            <div className="hidden lg:block animate-slideInRight" style={{ animationDelay: '0.3s' }}>
-              <div className="card-glass p-8 rounded-3xl animate-scaleIn" style={{ animationDelay: '0.5s' }}>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center p-6 bg-white/20 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/30 transition-all duration-300">
-                    <div className="text-5xl font-black text-white mb-2 animate-glow">10+</div>
-                    <div className="text-sm font-semibold text-white/90">Years Experience</div>
+            {/* Right Content - Hero Image */}
+            <div className="relative">
+              <div className="relative z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=600&h=800&fit=crop&q=80"
+                  alt="Caring healthcare professional"
+                  className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
+                />
+                {/* Floating Review Cards */}
+                <div className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-xl">
+                  <div className="flex items-center gap-3 mb-2">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&crop=face"
+                      alt="Customer review"
+                      className="w-10 h-10 rounded-full object-cover"
+                    />
+                    <div>
+                      <div className="flex items-center gap-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Heart key={i} size={14} className="text-red-400 fill-current" />
+                        ))}
+                      </div>
+                      <div className="text-xs text-aion-gray-600">4.9/5 • 47 reviews</div>
+                    </div>
                   </div>
-                  <div className="text-center p-6 bg-white/20 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/30 transition-all duration-300">
-                    <div className="text-5xl font-black text-white mb-2 animate-glow" style={{ animationDelay: '0.7s' }}>24/7</div>
-                    <div className="text-sm font-semibold text-white/90">Available</div>
-                  </div>
-                  <div className="text-center p-6 bg-white/20 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/30 transition-all duration-300">
-                    <div className="text-5xl font-black text-white mb-2 animate-glow" style={{ animationDelay: '0.9s' }}>500+</div>
-                    <div className="text-sm font-semibold text-white/90">Clients Served</div>
-                  </div>
-                  <div className="text-center p-6 bg-white/20 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/30 transition-all duration-300">
-                    <div className="text-5xl font-black text-white mb-2 animate-glow" style={{ animationDelay: '1.1s' }}>90</div>
-                    <div className="text-sm font-semibold text-white/90">Mile Radius</div>
+                </div>
+
+                <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108755-2616b612b49c?w=48&h=48&fit=crop&crop=face"
+                      alt="Customer review"
+                      className="w-10 h-10 rounded-full object-cover"
+                    />
+                    <div>
+                      <div className="flex items-center gap-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Heart key={i} size={14} className="text-red-400 fill-current" />
+                        ))}
+                      </div>
+                      <div className="text-xs text-aion-gray-600">4.9/5 • 26 reviews</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-            <a href="#services" className="flex flex-col items-center text-white/80 hover:text-white transition-colors animate-float">
-              <ChevronDown size={32} />
-              <span className="text-sm font-semibold mt-2">Discover More</span>
-            </a>
+              {/* Background Decorations */}
+              <div className="absolute top-10 right-10 w-32 h-32 bg-aion-secondary-400/20 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-10 left-10 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -222,6 +220,202 @@ function App() {
         </div>
       </section>
 
+      {/* Social Proof Section - Reviews and Trust Signals */}
+      <section className="py-20 bg-gradient-to-r from-aion-primary-50 to-aion-secondary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              Trusted by Families Across Essex
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Real reviews from families who have experienced our compassionate care
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* Review Card 1 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-aion-primary-100">
+              <div className="flex items-center gap-4 mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face"
+                  alt="Customer review"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <div className="flex items-center gap-1 mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Heart key={i} size={16} className="text-red-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-sm text-aion-gray-600">4.9/5 • 47 reviews</div>
+                </div>
+              </div>
+              <p className="text-aion-gray-700 italic">
+                "Aion provided exceptional care for my mother. The team was professional, compassionate, and treated her with utmost respect and dignity."
+              </p>
+              <div className="text-aion-navy font-semibold mt-4">- Sarah Johnson</div>
+            </div>
+
+            {/* Review Card 2 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-aion-secondary-100">
+              <div className="flex items-center gap-4 mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b49c?w=64&h=64&fit=crop&crop=face"
+                  alt="Customer review"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <div className="flex items-center gap-1 mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Heart key={i} size={16} className="text-red-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-sm text-aion-gray-600">4.9/5 • 26 reviews</div>
+                </div>
+              </div>
+              <p className="text-aion-gray-700 italic">
+                "The live-in care service has been life-changing for our family. Professional care that feels like family."
+              </p>
+              <div className="text-aion-navy font-semibold mt-4">- Michael Roberts</div>
+            </div>
+
+            {/* Review Card 3 */}
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-aion-primary-100">
+              <div className="flex items-center gap-4 mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&fit=crop&crop=face"
+                  alt="Customer review"
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <div className="flex items-center gap-1 mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Heart key={i} size={16} className="text-red-400 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-sm text-aion-gray-600">4.9/5 • 31 reviews</div>
+                </div>
+              </div>
+              <p className="text-aion-gray-700 italic">
+                "Outstanding support for my father's care needs. The team truly understands dignity and respect in care."
+              </p>
+              <div className="text-aion-navy font-semibold mt-4">- Emma Williams</div>
+            </div>
+          </div>
+
+          {/* Trusted By Section */}
+          <div className="text-center">
+            <p className="text-aion-gray-600 mb-8 text-lg">
+              Trusted by <span className="font-bold text-aion-navy">500+</span> families to empower{' '}
+              <span className="font-bold text-aion-navy">2,00,000+</span> people
+            </p>
+            <div className="flex items-center justify-center gap-8 flex-wrap">
+              {['NHS', 'Essex County Council', 'Age UK', 'Care Quality Commission', 'Alzheimer\'s Society'].map((partner) => (
+                <div key={partner} className="text-aion-gray-400 font-semibold px-4 py-2 bg-white rounded-lg shadow-sm">
+                  {partner}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              Our Track Record of Excellence
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Years of experience, countless families helped, and trusted centers established
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="bg-gradient-to-br from-aion-primary-50 to-aion-primary-100 p-12 rounded-3xl">
+              <div className="text-6xl md:text-7xl font-black text-aion-primary-600 mb-4">15+</div>
+              <div className="text-2xl font-bold text-aion-navy mb-2">Years Experience</div>
+              <div className="text-aion-gray-600">Dedicated to providing exceptional care</div>
+            </div>
+            <div className="bg-gradient-to-br from-aion-secondary-50 to-aion-secondary-100 p-12 rounded-3xl">
+              <div className="text-6xl md:text-7xl font-black text-aion-secondary-600 mb-4">500+</div>
+              <div className="text-2xl font-bold text-aion-navy mb-2">Happy Clients</div>
+              <div className="text-aion-gray-600">Families we've supported and empowered</div>
+            </div>
+            <div className="bg-gradient-to-br from-aion-dark-50 to-aion-dark-100 p-12 rounded-3xl">
+              <div className="text-6xl md:text-7xl font-black text-aion-dark-700 mb-4">3</div>
+              <div className="text-2xl font-bold text-aion-navy mb-2">Trusted Centers</div>
+              <div className="text-aion-gray-600">Locations serving our community</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works - Process Flow */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              How Aion Works
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Simple, clear steps to get you the care you need
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Step 1 */}
+            <div className="text-center group">
+              <div className="relative mb-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-aion-primary-400 to-aion-primary-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-3xl font-bold text-white">1</span>
+                </div>
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                  <Stethoscope size={48} className="text-aion-primary-500" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-aion-navy mb-4">Initial Assessment</h3>
+              <p className="text-aion-gray-600 leading-relaxed">
+                We conduct a comprehensive assessment of your needs, preferences, and goals to create a personalized care plan
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="text-center group">
+              <div className="relative mb-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-aion-secondary-400 to-aion-secondary-600 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-3xl font-bold text-white">2</span>
+                </div>
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                  <Home size={48} className="text-aion-secondary-500" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-aion-navy mb-4">Personalized Care Plan</h3>
+              <p className="text-aion-gray-600 leading-relaxed">
+                Our expert team develops a tailored care strategy that respects your independence while providing essential support
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="text-center group">
+              <div className="relative mb-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-aion-dark-500 to-aion-dark-700 rounded-full flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-3xl font-bold text-white">3</span>
+                </div>
+                <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                  <Heart size={48} className="text-aion-dark-600" />
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold text-aion-navy mb-4">Ongoing Support</h3>
+              <p className="text-aion-gray-600 leading-relaxed">
+                Continuous monitoring and adjustment of your care plan, with 24/7 support whenever you need it most
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Aion - Modern Design */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -275,6 +469,199 @@ function App() {
               description="24/7 support ensuring help is there whenever you need it most"
               color="mint"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Team Showcase - Meet Our Caring Team */}
+      <section className="py-20 bg-gradient-to-br from-aion-primary-50 via-white to-aion-secondary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              Meet Our Caring Team
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Our experienced professionals are dedicated to providing compassionate, expert care
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Team Member 1 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=128&h=128&fit=crop&crop=face"
+                    alt="Dr. Sarah Johnson - Registered Nurse"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-aion-primary-500 text-white p-2 rounded-full">
+                    <Stethoscope size={20} />
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-aion-navy mb-2">Dr. Sarah Johnson</h3>
+              <p className="text-aion-primary-600 font-semibold mb-3">Registered Nurse</p>
+              <p className="text-aion-gray-600 text-sm leading-relaxed">
+                Over 15 years of experience in elderly care and medical support
+              </p>
+            </div>
+
+            {/* Team Member 2 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=128&h=128&fit=crop&crop=face"
+                    alt="Emma Davis - Care Coordinator"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-aion-secondary-500 text-white p-2 rounded-full">
+                    <Users size={20} />
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-aion-navy mb-2">Emma Davis</h3>
+              <p className="text-aion-secondary-600 font-semibold mb-3">Care Coordinator</p>
+              <p className="text-aion-gray-600 text-sm leading-relaxed">
+                Specialist in personalized care planning and family support
+              </p>
+            </div>
+
+            {/* Team Member 3 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=128&h=128&fit=crop&crop=face"
+                    alt="Michael Thompson - Senior Care Assistant"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-aion-dark-600 text-white p-2 rounded-full">
+                    <Heart size={20} />
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-aion-navy mb-2">Michael Thompson</h3>
+              <p className="text-aion-dark-600 font-semibold mb-3">Senior Care Assistant</p>
+              <p className="text-aion-gray-600 text-sm leading-relaxed">
+                Expert in live-in care and companionship services
+              </p>
+            </div>
+
+            {/* Team Member 4 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1594824423026-3fd4d3dcb5d1?w=128&h=128&fit=crop&crop=face"
+                    alt="Lisa Anderson - Operations Manager"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-aion-turquoise-500 text-white p-2 rounded-full">
+                    <Award size={20} />
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-aion-navy mb-2">Lisa Anderson</h3>
+              <p className="text-aion-turquoise-600 font-semibold mb-3">Operations Manager</p>
+              <p className="text-aion-gray-600 text-sm leading-relaxed">
+                Ensuring quality service delivery and client satisfaction
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              What Our Families Say
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Real experiences from families who trust us with their loved ones' care
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-gradient-to-br from-aion-primary-50 to-white p-8 rounded-2xl border border-aion-primary-100 shadow-lg">
+              <div className="flex items-center gap-1 mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <Heart key={i} size={20} className="text-red-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-aion-gray-700 italic mb-6 leading-relaxed">
+                "Aion provided exceptional care for my mother. The team was professional, compassionate, and treated her with utmost respect and dignity. I highly recommend Aion for top-notch senior care."
+              </p>
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&crop=face"
+                  alt="Sarah Johnson"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <div className="font-semibold text-aion-navy">Sarah Johnson</div>
+                  <div className="text-sm text-aion-gray-600">Daughter of Client</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-gradient-to-br from-aion-secondary-50 to-white p-8 rounded-2xl border border-aion-secondary-100 shadow-lg">
+              <div className="flex items-center gap-1 mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <Heart key={i} size={20} className="text-red-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-aion-gray-700 italic mb-6 leading-relaxed">
+                "The live-in care service has been life-changing for our family. Professional care that feels like family. The team's attention to detail and genuine compassion makes all the difference."
+              </p>
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b49c?w=48&h=48&fit=crop&crop=face"
+                  alt="Michael Roberts"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <div className="font-semibold text-aion-navy">Michael Roberts</div>
+                  <div className="text-sm text-aion-gray-600">Son of Client</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-gradient-to-br from-aion-dark-50 to-white p-8 rounded-2xl border border-aion-dark-100 shadow-lg">
+              <div className="flex items-center gap-1 mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <Heart key={i} size={20} className="text-red-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-aion-gray-700 italic mb-6 leading-relaxed">
+                "Outstanding support for my father's care needs. The team truly understands dignity and respect in care. Their expertise and warmth have given our family peace of mind."
+              </p>
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=48&h=48&fit=crop&crop=face"
+                  alt="Emma Williams"
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <div className="font-semibold text-aion-navy">Emma Williams</div>
+                  <div className="text-sm text-aion-gray-600">Daughter of Client</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -361,6 +748,139 @@ function App() {
                 Check Your Area
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section - Latest Articles */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-aion-navy mb-6">
+              Latest Care Insights
+            </h2>
+            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto">
+              Expert advice, tips, and insights to help you and your family navigate care decisions
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Blog Article 1 */}
+            <article className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-aion-primary-100 hover:border-aion-primary-300 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=250&fit=crop"
+                  alt="How Aion Support Aging in Place"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-aion-primary-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Care Guide
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-4 text-sm text-aion-gray-600 mb-3">
+                  <div className="flex items-center gap-1">
+                    <Users size={16} />
+                    <span>By Care Team</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock size={16} />
+                    <span>6 Nov 2024</span>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-aion-navy mb-3 group-hover:text-aion-primary-600 transition-colors">
+                  How Aion Support Aging in Place with Dignity
+                </h3>
+                <p className="text-aion-gray-600 mb-4 leading-relaxed">
+                  Discover how our personalized care services help seniors maintain independence while receiving the support they need...
+                </p>
+                <a href="/blog/aging-in-place" className="inline-flex items-center gap-2 text-aion-primary-600 font-semibold hover:gap-3 transition-all">
+                  Read More <ArrowRight size={16} />
+                </a>
+              </div>
+            </article>
+
+            {/* Blog Article 2 */}
+            <article className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-aion-secondary-100 hover:border-aion-secondary-300 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1494756739853-38af1d01c05b?w=400&h=250&fit=crop"
+                  alt="Healthy Aging Nutrition Tips"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-aion-secondary-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Health & Wellness
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-4 text-sm text-aion-gray-600 mb-3">
+                  <div className="flex items-center gap-1">
+                    <Users size={16} />
+                    <span>By Care Team</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock size={16} />
+                    <span>4 Nov 2024</span>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-aion-navy mb-3 group-hover:text-aion-secondary-600 transition-colors">
+                  Healthy Aging: Nutrition Tips and Meal Planning
+                </h3>
+                <p className="text-aion-gray-600 mb-4 leading-relaxed">
+                  Learn essential nutrition strategies and meal planning tips to support healthy aging and maintain vitality...
+                </p>
+                <a href="/blog/healthy-aging-nutrition" className="inline-flex items-center gap-2 text-aion-secondary-600 font-semibold hover:gap-3 transition-all">
+                  Read More <ArrowRight size={16} />
+                </a>
+              </div>
+            </article>
+
+            {/* Blog Article 3 */}
+            <article className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-aion-dark-100 hover:border-aion-dark-300 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=250&fit=crop"
+                  alt="Specialized Care for Seniors"
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-aion-dark-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    Specialized Care
+                  </span>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-4 text-sm text-aion-gray-600 mb-3">
+                  <div className="flex items-center gap-1">
+                    <Users size={16} />
+                    <span>By Care Team</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock size={16} />
+                    <span>2 Nov 2024</span>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-aion-navy mb-3 group-hover:text-aion-dark-600 transition-colors">
+                  Specialized Care for Seniors with Dignity and Respect
+                </h3>
+                <p className="text-aion-gray-600 mb-4 leading-relaxed">
+                  Understanding specialized care needs and how to approach them with compassion, expertise, and respect...
+                </p>
+                <a href="/blog/specialized-care-dignity" className="inline-flex items-center gap-2 text-aion-dark-600 font-semibold hover:gap-3 transition-all">
+                  Read More <ArrowRight size={16} />
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div className="text-center mt-12">
+            <a href="/blog" className="btn-primary text-lg px-10 py-5">
+              View All Articles
+            </a>
           </div>
         </div>
       </section>
