@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { Heart } from 'lucide-react'
 import { createSEOHead, defaultSEOConfigs } from '../utils/seo'
 
 export const Route = createFileRoute('/about')({
@@ -9,17 +10,28 @@ export const Route = createFileRoute('/about')({
 function About() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-24 bg-aion-blue/10"> {/* Increased py to py-24 */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12"> {/* Increased margin */}
-            <h1 className="text-heading-1 text-aion-navy mb-6"> {/* Increased margin bottom */}
-              About Aion Health Care
+      {/* Enhanced Hero Section */}
+      <section className="py-32 bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-radial opacity-30"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="text-center animate-fadeInUp">
+            <div className="inline-flex items-center gap-2 bg-aion-coral/10 border border-aion-coral/20 rounded-full px-6 py-3 mb-8">
+              <div className="bg-aion-coral/20 p-1 rounded-full">
+                <Heart className="text-aion-coral" size={18} />
+              </div>
+              <span className="text-aion-coral font-semibold text-sm">About Our Mission</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-aion-navy mb-8 leading-tight">
+              About Aion<br />
+              <span className="text-gradient bg-gradient-to-r from-aion-coral to-aion-blue">
+                Health Care
+              </span>
             </h1>
-            <p className="text-body-xl text-aion-gray-700 max-w-4xl mx-auto"> {/* Upgraded to body-xl */}
+            
+            <p className="text-xl md:text-2xl text-aion-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
               Compassionate care services dedicated to improving lives in Essex and the East of England.
-              We believe in treating every client like family and providing the highest quality care
-              that empowers independence and dignity.
+              <span className="block mt-2 text-aion-gray-600">We believe in treating every client like family and providing the highest quality care that empowers independence and dignity.</span>
             </p>
           </div>
           

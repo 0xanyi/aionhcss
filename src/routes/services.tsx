@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import React from 'react'
 import { createSEOHead, defaultSEOConfigs } from '../utils/seo'
-import { Home, BedDouble, Building2, Utensils, Sparkles, Heart, Pill, PawPrint, Car, PartyPopper, CheckCircle, ArrowRight, Clock } from 'lucide-react'
+import { Home, BedDouble, Building2, Utensils, Sparkles, Heart, Pill, PawPrint, Car, PartyPopper, CheckCircle, ArrowRight, Clock, Shield } from 'lucide-react'
 
 export const Route = createFileRoute('/services')({
   head: () => createSEOHead(defaultSEOConfigs.services),
@@ -11,42 +11,52 @@ export const Route = createFileRoute('/services')({
 function Services() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Modern Hero Section */}
-      <section className="hero-section" style={{ minHeight: '500px' }}>
+      {/* Enhanced Modern Hero Section */}
+      <section className="hero-section relative overflow-hidden" style={{ minHeight: '500px' }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#002B7F]/95 via-[#1a237e]/90 to-[#1565c0]/85"></div>
+        <div className="absolute inset-0 bg-gradient-radial opacity-60"></div>
         <img
           src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?w=1920&h=800&fit=crop"
           alt="Healthcare services"
-          className="hero-image-overlay"
+          className="hero-image-overlay opacity-30"
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-24">
           <div className="animate-fadeInUp">
-            <span className="badge text-sm mb-6 inline-block bg-white/20 text-white border-white/30">
-              Comprehensive Care Solutions
-            </span>
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-6 py-3 mb-8 animate-scaleIn">
+              <div className="bg-white/20 p-1 rounded-full">
+                <Shield className="text-white" size={18} />
+              </div>
+              <span className="text-white font-semibold text-sm">Comprehensive Care Solutions</span>
+            </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
               Personalized Services<br />
-              <span className="bg-gradient-to-r from-aion-coral to-pink-400 bg-clip-text text-transparent">
+              <span className="text-gradient bg-gradient-to-r from-white to-aion-coral">
                 Tailored to Your Needs
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/95 max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
               From daily assistance to 24/7 comprehensive support, we provide care services
-              that empower independence and enhance quality of life across Essex and East England.
+              <span className="block mt-2 text-white/80">that empower independence and enhance quality of life across Essex and East England.</span>
             </p>
 
-            {/* Service Finder Card */}
-            <div className="card-glass max-w-2xl mx-auto p-8 rounded-3xl">
-              <h3 className="text-2xl font-bold text-aion-navy mb-4">
-                Need Help Choosing?
-              </h3>
-              <p className="text-aion-gray-700 mb-6">
-                Get a free consultation to discover the perfect care solution for your unique needs
-              </p>
-              <a href="/contact" className="btn-primary text-lg px-8 py-4 inline-flex items-center gap-2">
-                Get Free Consultation
-                <ArrowRight size={20} />
-              </a>
+            {/* Enhanced Service Finder Card */}
+            <div className="card-glass max-w-2xl mx-auto p-8 rounded-3xl animate-scaleIn border border-white/20">
+              <div className="text-center">
+                <div className="bg-white/20 p-4 rounded-2xl mb-6 w-16 h-16 mx-auto flex items-center justify-center">
+                  <Heart className="text-white" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  Need Help Choosing?
+                </h3>
+                <p className="text-white/90 mb-6 font-medium">
+                  Get a free consultation to discover the perfect care solution for your unique needs
+                </p>
+                <a href="/contact" className="btn-primary bg-white text-aion-navy hover:bg-gray-100 text-lg px-8 py-4 inline-flex items-center gap-2 shadow-2xl">
+                  Get Free Consultation
+                  <ArrowRight size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

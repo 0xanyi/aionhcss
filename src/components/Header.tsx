@@ -26,20 +26,22 @@ function Header() {
 
   return (
     <>
-      <header className={`px-6 py-3 flex items-center text-white fixed w-full top-0 z-40 transition-all duration-300 ${
+      <header className={`px-6 py-4 flex items-center fixed w-full top-0 z-40 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#002B7F]/95 backdrop-blur-lg shadow-2xl'
-          : 'bg-[#002B7F] shadow-lg'
+          ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-gray-200/20'
+          : 'bg-gradient-to-r from-white/90 to-gray-50/90 backdrop-blur-md shadow-lg border-b border-gray-200/10'
       }`}>
         <h1 className="text-xl font-semibold">
-          <Link to="/" className="flex items-center transition-transform hover:scale-105">
-            <img
-              src="/aion_logo_blue.png"
-              alt="Aion Health Care Logo"
-              className="h-12 w-auto"
-              loading="eager"
-              fetchPriority="high"
-            />
+          <Link to="/" className="flex items-center transition-all duration-300 hover:scale-105 group">
+            <div className="bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:rotate-1">
+              <img
+                src="/aion_logo_blue.png"
+                alt="Aion Health Care Logo"
+                className="h-10 w-auto"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
           </Link>
         </h1>
 
@@ -47,7 +49,7 @@ function Header() {
         <nav className="hidden lg:flex lg:ml-auto lg:items-center lg:space-x-8">
           <Link
             to="/"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -57,7 +59,7 @@ function Header() {
           </Link>
           <Link
             to="/about"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -67,7 +69,7 @@ function Header() {
           </Link>
           <Link
             to="/services"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -77,7 +79,7 @@ function Header() {
           </Link>
           <Link
             to="/clients"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -87,7 +89,7 @@ function Header() {
           </Link>
           <Link
             to="/resources"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -97,7 +99,7 @@ function Header() {
           </Link>
           <Link
             to="/contact"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -107,7 +109,7 @@ function Header() {
           </Link>
           <Link
             to="/careers"
-            className="text-white/90 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
             activeProps={{
               className: 'text-aion-coral font-semibold',
             }}
@@ -120,10 +122,10 @@ function Header() {
         {/* Mobile Menu Button - Only visible on mobile */}
         <button
           onClick={() => setIsOpen(true)}
-          className="p-2 hover:bg-white/10 rounded-lg transition-colors lg:hidden ml-auto"
+          className="p-2 hover:bg-gray-100 rounded-lg transition-colors lg:hidden ml-auto"
           aria-label="Open menu"
         >
-          <Menu size={24} />
+          <Menu size={24} className="text-gray-700" />
         </button>
 
         {/* Contact Button - Desktop Only */}
