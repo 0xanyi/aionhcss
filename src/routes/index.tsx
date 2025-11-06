@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Phone, ChevronDown, MapPin, Heart, Home, Users, Utensils, Sparkles, Clock, Award, Shield, CheckCircle, Stethoscope, BedDouble, Building2 } from 'lucide-react'
+import { Phone, ChevronDown, MapPin, Heart, Home, Users, Utensils, Sparkles, Clock, Award, Shield, CheckCircle, Stethoscope, BedDouble, Building2, ArrowRight } from 'lucide-react'
 import { createSEOHead, defaultSEOConfigs } from '../utils/seo'
 import { initializeWebsite } from '../init'
 import { lazy, Suspense } from 'react'
@@ -15,15 +15,18 @@ initializeWebsite()
 function App() {
   return (
     <>
-      {/* Enhanced Modern Hero Section */}
-      <section className="hero-section relative overflow-hidden">
-        {/* Enhanced Background with Modern Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#002B7F]/95 via-[#1a237e]/90 to-[#1565c0]/85"></div>
-        <div className="absolute inset-0 bg-gradient-radial opacity-60"></div>
+      {/* Stunning Modern Hero Section with Turquoise Gradient */}
+      <section className="hero-section relative overflow-hidden min-h-[90vh]">
+        {/* Beautiful Turquoise Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-aion-turquoise-600/95 via-aion-teal-500/90 to-aion-navy-500/95"></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(97, 218, 251, 0.3) 0%, transparent 50%)'}}></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(36, 123, 160, 0.2) 0%, transparent 50%)'}}></div>
+
+        {/* Stunning Healthcare Hero Image */}
         <img
-          src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1920&h=1080&fit=crop"
-          alt="Healthcare professional"
-          className="hero-image-overlay opacity-30"
+          src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&h=1080&fit=crop&q=80"
+          alt="Professional healthcare team providing compassionate care"
+          className="hero-image-overlay opacity-20"
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32">
@@ -37,60 +40,71 @@ function App() {
                 <span className="text-white font-semibold text-sm">CQC Registered Care Provider</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8 text-white">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8 text-white drop-shadow-lg">
                 Care That Respects,<br />
-                <span className="text-gradient bg-gradient-to-r from-white to-aion-coral">
+                <span className="text-gradient bg-gradient-to-r from-white via-aion-mint-300 to-aion-turquoise-300">
                   Services That Empower
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-white/95 mb-10 leading-relaxed max-w-2xl font-medium">
+              <p className="text-xl md:text-2xl text-white/95 mb-10 leading-relaxed max-w-2xl font-medium drop-shadow">
                 24/7 compassionate home care and supported living services in Essex and East England.
-                <span className="block mt-2 text-white/80">Personalized care that empowers independence with dignity and respect.</span>
+                <span className="block mt-2 text-white/90 text-lg">Personalized care that empowers independence with dignity and respect.</span>
               </p>
 
-              {/* Trust Indicators */}
+              {/* Enhanced Trust Indicators */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-12">
-                <div className="card-glass px-5 py-3 rounded-2xl flex items-center gap-3">
-                  <Stethoscope className="text-aion-coral" size={24} />
-                  <span className="font-semibold text-white">CQC Registered</span>
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                  <div className="bg-white/20 p-2 rounded-xl">
+                    <Stethoscope className="text-white" size={24} />
+                  </div>
+                  <span className="font-semibold text-white text-lg">CQC Registered</span>
                 </div>
-                <div className="card-glass px-5 py-3 rounded-2xl flex items-center gap-3">
-                  <Clock className="text-aion-coral" size={24} />
-                  <span className="font-semibold text-white">24/7 Support</span>
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                  <div className="bg-white/20 p-2 rounded-xl">
+                    <Clock className="text-white" size={24} />
+                  </div>
+                  <span className="font-semibold text-white text-lg">24/7 Support</span>
                 </div>
-                <div className="card-glass px-5 py-3 rounded-2xl flex items-center gap-3">
-                  <MapPin className="text-aion-coral" size={24} />
-                  <span className="font-semibold text-white">90 Mile Coverage</span>
+                <div className="card-glass px-6 py-4 rounded-2xl flex items-center gap-3 border border-white/30 hover:border-white/60 transition-all hover:scale-105">
+                  <div className="bg-white/20 p-2 rounded-xl">
+                    <MapPin className="text-white" size={24} />
+                  </div>
+                  <span className="font-semibold text-white text-lg">90 Mile Coverage</span>
                 </div>
               </div>
 
-              {/* Call to Action Buttons */}
+              {/* Modern Call to Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-8">
                 <a
                   href="/contact"
-                  className="btn-primary px-10 py-5 text-lg font-bold shadow-2xl"
+                  className="group relative px-10 py-5 text-lg font-bold bg-white text-aion-teal-600 rounded-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 overflow-hidden"
                 >
-                  Get Started Today
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    Get Started Today
+                    <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-aion-mint-300 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </a>
                 <a
                   href="#services"
-                  className="btn-secondary border-white text-white hover:bg-white hover:text-aion-navy px-10 py-5 text-lg font-bold"
+                  className="px-10 py-5 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
                 >
                   Explore Services
+                  <ChevronDown size={20} />
                 </a>
               </div>
 
-              {/* Phone Contact */}
+              {/* Enhanced Phone Contact */}
               <div className="text-center lg:text-left">
                 <a
                   href="tel:07368195705"
-                  className="inline-flex items-center gap-3 text-white hover:text-aion-coral font-bold text-xl transition-colors"
+                  className="inline-flex items-center gap-3 text-white hover:text-aion-mint-200 font-bold text-xl transition-all duration-300 group"
                 >
-                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full">
+                  <div className="bg-white/25 backdrop-blur-sm p-4 rounded-full group-hover:bg-white/35 transition-all group-hover:scale-110">
                     <Phone size={24} />
                   </div>
-                  <span>Call: 07368195705</span>
+                  <span className="drop-shadow">Call: 07368195705</span>
                 </a>
               </div>
             </div>
@@ -130,21 +144,25 @@ function App() {
         </div>
       </section>
 
-      {/* Services Overview - Modern Design */}
-      <section id="services" className="py-32 gradient-soft relative overflow-hidden">
-        {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-aion-coral/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-aion-blue/5 rounded-full blur-3xl"></div>
+      {/* Services Overview - Redesigned with Turquoise Theme */}
+      <section id="services" className="py-32 relative overflow-hidden bg-gradient-to-b from-white via-aion-turquoise-50 to-white">
+        {/* Beautiful Decorative Elements */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-aion-turquoise-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-aion-teal-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-aion-mint-400/10 rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-block mb-4">
-              <span className="badge text-sm">Our Services</span>
+            <div className="inline-block mb-6 animate-fadeIn">
+              <span className="inline-flex items-center gap-2 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 text-white font-semibold px-6 py-3 rounded-full text-sm shadow-lg">
+                <Sparkles size={16} />
+                Our Services
+              </span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black text-aion-navy mb-8">
+            <h2 className="text-5xl md:text-6xl font-black bg-gradient-to-r from-aion-navy-500 via-aion-teal-600 to-aion-turquoise-600 bg-clip-text text-transparent mb-8">
               Comprehensive Care Solutions
             </h2>
-            <p className="text-xl text-aion-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-aion-gray-700 max-w-3xl mx-auto leading-relaxed">
               Personalized services designed to support independence and enhance quality of life
               for individuals and families across Essex and East England.
             </p>
@@ -157,14 +175,14 @@ function App() {
               title="Personal Care"
               description="Professional assistance with daily living activities including bathing, dressing, and mobility support"
               link="/services#personal-care"
-              color="coral"
+              color="turquoise"
             />
             <ServiceCard
               icon={<BedDouble size={32} />}
               title="Live-in Care"
               description="Round-the-clock comprehensive care in the comfort and familiarity of your own home"
               link="/services#live-in-care"
-              color="blue"
+              color="teal"
             />
             <ServiceCard
               icon={<Building2 size={32} />}
@@ -178,21 +196,21 @@ function App() {
               title="Meal Planning"
               description="Nutritious meal preparation tailored to individual dietary needs and preferences"
               link="/services#meal-planning"
-              color="coral"
+              color="mint"
             />
             <ServiceCard
               icon={<Sparkles size={32} />}
               title="Household Tasks"
               description="Home maintenance and cleaning services ensuring a comfortable living environment"
               link="/services#household-tasks"
-              color="blue"
+              color="teal"
             />
             <ServiceCard
               icon={<Heart size={32} />}
               title="Respite Care"
               description="Temporary professional care providing essential relief for family caregivers"
               link="/services#respite-care"
-              color="navy"
+              color="turquoise"
             />
           </div>
 
@@ -237,13 +255,13 @@ function App() {
               icon={<Heart size={32} />}
               title="Compassionate Care"
               description="Every client receives empathetic, respectful, and genuinely caring support"
-              color="coral"
+              color="turquoise"
             />
             <WhyCard
               icon={<Award size={32} />}
               title="Quality Excellence"
               description="Highest standards maintained through continuous improvement and training"
-              color="blue"
+              color="teal"
             />
             <WhyCard
               icon={<Users size={32} />}
@@ -255,7 +273,7 @@ function App() {
               icon={<Clock size={32} />}
               title="Always Available"
               description="24/7 support ensuring help is there whenever you need it most"
-              color="coral"
+              color="mint"
             />
           </div>
         </div>
@@ -277,20 +295,26 @@ function App() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="stat-card">
-              <MapPin size={48} className="text-aion-coral mx-auto mb-4" />
-              <div className="stat-number">90</div>
-              <div className="text-aion-gray-600 font-semibold text-lg">Mile Coverage Radius</div>
+            <div className="stat-card border border-aion-turquoise-200 hover:border-aion-turquoise-400">
+              <div className="bg-gradient-to-br from-aion-turquoise-50 to-aion-turquoise-100 p-4 rounded-2xl inline-block mb-4">
+                <MapPin size={48} className="text-aion-turquoise-500" />
+              </div>
+              <div className="stat-number bg-gradient-to-r from-aion-turquoise-500 to-aion-teal-500 bg-clip-text text-transparent">90</div>
+              <div className="text-aion-gray-700 font-semibold text-lg">Mile Coverage Radius</div>
             </div>
-            <div className="stat-card">
-              <Building2 size={48} className="text-aion-blue mx-auto mb-4" />
-              <div className="stat-number">500+</div>
-              <div className="text-aion-gray-600 font-semibold text-lg">Families Supported</div>
+            <div className="stat-card border border-aion-teal-200 hover:border-aion-teal-400">
+              <div className="bg-gradient-to-br from-aion-teal-50 to-aion-teal-100 p-4 rounded-2xl inline-block mb-4">
+                <Building2 size={48} className="text-aion-teal-500" />
+              </div>
+              <div className="stat-number bg-gradient-to-r from-aion-teal-500 to-aion-navy-500 bg-clip-text text-transparent">500+</div>
+              <div className="text-aion-gray-700 font-semibold text-lg">Families Supported</div>
             </div>
-            <div className="stat-card">
-              <Clock size={48} className="text-aion-navy mx-auto mb-4" />
-              <div className="stat-number">24/7</div>
-              <div className="text-aion-gray-600 font-semibold text-lg">Always Available</div>
+            <div className="stat-card border border-aion-navy-200 hover:border-aion-navy-400">
+              <div className="bg-gradient-to-br from-aion-navy-50 to-aion-navy-100 p-4 rounded-2xl inline-block mb-4">
+                <Clock size={48} className="text-aion-navy-500" />
+              </div>
+              <div className="stat-number bg-gradient-to-r from-aion-navy-500 to-aion-turquoise-500 bg-clip-text text-transparent">24/7</div>
+              <div className="text-aion-gray-700 font-semibold text-lg">Always Available</div>
             </div>
           </div>
 
@@ -341,22 +365,29 @@ function App() {
         </div>
       </section>
 
-      {/* Final CTA - Modern Design */}
-      <section className="cta-section mx-4 sm:mx-6 lg:mx-8 my-20">
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-5xl md:text-6xl font-black text-white mb-6">
+      {/* Stunning Final CTA with Turquoise Gradient */}
+      <section className="relative mx-4 sm:mx-6 lg:mx-8 my-20 rounded-3xl overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-aion-turquoise-500 via-aion-teal-600 to-aion-navy-600"></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 30% 50%, rgba(159, 237, 215, 0.2) 0%, transparent 50%)'}}></div>
+        <div className="absolute inset-0" style={{background: 'radial-gradient(circle at 70% 80%, rgba(97, 218, 251, 0.2) 0%, transparent 50%)'}}></div>
+
+        <div className="relative max-w-4xl mx-auto px-8 py-20 text-center z-10">
+          <h2 className="text-5xl md:text-6xl font-black text-white mb-6 drop-shadow-lg">
             Ready to Experience Quality Care?
           </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white/95 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow">
             Take the first step towards compassionate, professional care. Contact us today
             to discuss your unique needs and discover how we can support you and your family.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="/contact" className="btn-primary bg-white text-aion-navy hover:bg-gray-100 px-10 py-5 text-lg font-bold shadow-2xl">
-              Get Started Today
+            <a href="/contact" className="group relative px-10 py-5 text-lg font-bold bg-white text-aion-teal-600 rounded-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 overflow-hidden">
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                Get Started Today
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+              </span>
             </a>
-            <a href="tel:07368195705" className="btn-secondary border-white text-white hover:bg-white hover:text-aion-navy px-10 py-5 text-lg font-bold">
+            <a href="tel:07368195705" className="px-10 py-5 text-lg font-bold border-2 border-white text-white hover:bg-white/10 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3">
               <Phone size={24} />
               Call: 07368195705
             </a>
@@ -388,29 +419,30 @@ interface ServiceCardProps {
   title: string
   description: string
   link: string
-  color: 'coral' | 'blue' | 'navy'
+  color: 'turquoise' | 'teal' | 'navy' | 'mint'
 }
 
 function ServiceCard({ icon, title, description, link, color }: ServiceCardProps) {
   const colorClasses = {
-    coral: 'text-aion-coral bg-aion-coral/10 hover:bg-aion-coral/20',
-    blue: 'text-aion-blue bg-aion-blue/10 hover:bg-aion-blue/20',
-    navy: 'text-aion-navy bg-aion-navy/10 hover:bg-aion-navy/20'
+    turquoise: 'text-aion-turquoise-400 bg-gradient-to-br from-aion-turquoise-50 to-aion-turquoise-100 hover:from-aion-turquoise-100 hover:to-aion-turquoise-200',
+    teal: 'text-aion-teal-500 bg-gradient-to-br from-aion-teal-50 to-aion-teal-100 hover:from-aion-teal-100 hover:to-aion-teal-200',
+    navy: 'text-aion-navy-500 bg-gradient-to-br from-aion-navy-50 to-aion-navy-100 hover:from-aion-navy-100 hover:to-aion-navy-200',
+    mint: 'text-aion-mint-500 bg-gradient-to-br from-aion-mint-50 to-aion-mint-100 hover:from-aion-mint-100 hover:to-aion-mint-200'
   }
 
   return (
-    <a href={link} className="interactive-card group block bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
+    <a href={link} className="group block bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-aion-turquoise-100 hover:border-aion-turquoise-300">
       <div className="service-card-content">
-        <div className={`icon-container ${colorClasses[color]} border border-transparent group-hover:border-current/20 transition-all duration-300`}>
+        <div className={`icon-container mb-6 ${colorClasses[color]} border-2 border-transparent group-hover:border-current/30 group-hover:scale-110 transition-all duration-300`}>
           {icon}
         </div>
-        <h3 className="text-2xl font-bold text-aion-navy mb-4 group-hover:text-aion-coral transition-colors duration-300">
+        <h3 className="text-2xl font-bold text-aion-navy-700 mb-4 group-hover:text-aion-turquoise-600 transition-colors duration-300">
           {title}
         </h3>
         <p className="text-aion-gray-600 mb-6 leading-relaxed group-hover:text-aion-gray-700 transition-colors duration-300">{description}</p>
-        <div className="flex items-center gap-2 text-aion-coral font-semibold group-hover:gap-3 transition-all duration-300">
+        <div className="flex items-center gap-2 text-aion-turquoise-500 font-semibold group-hover:gap-3 transition-all duration-300">
           <span>Learn More</span>
-          <ChevronDown size={16} className="rotate-[-90deg] group-hover:translate-x-1 transition-transform duration-300" />
+          <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform duration-300" />
         </div>
       </div>
     </a>
@@ -421,22 +453,23 @@ interface WhyCardProps {
   icon: React.ReactNode
   title: string
   description: string
-  color: 'coral' | 'blue' | 'navy'
+  color: 'turquoise' | 'teal' | 'navy' | 'mint'
 }
 
 function WhyCard({ icon, title, description, color }: WhyCardProps) {
   const colorClasses = {
-    coral: 'text-aion-coral bg-aion-coral/10 hover:bg-aion-coral/20',
-    blue: 'text-aion-blue bg-aion-blue/10 hover:bg-aion-blue/20',
-    navy: 'text-aion-navy bg-aion-navy/10 hover:bg-aion-navy/20'
+    turquoise: 'text-aion-turquoise-500 bg-gradient-to-br from-aion-turquoise-50 to-aion-turquoise-100',
+    teal: 'text-aion-teal-500 bg-gradient-to-br from-aion-teal-50 to-aion-teal-100',
+    navy: 'text-aion-navy-500 bg-gradient-to-br from-aion-navy-50 to-aion-navy-100',
+    mint: 'text-aion-mint-500 bg-gradient-to-br from-aion-mint-50 to-aion-mint-100'
   }
 
   return (
-    <div className="interactive-card text-center group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500">
-      <div className={`icon-container mx-auto ${colorClasses[color]} border border-transparent group-hover:border-current/20 transition-all duration-300`}>
+    <div className="text-center group bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-aion-turquoise-100 hover:border-aion-turquoise-300">
+      <div className={`icon-container mx-auto mb-6 ${colorClasses[color]} border-2 border-transparent group-hover:border-current/30 group-hover:scale-110 transition-all duration-300`}>
         {icon}
       </div>
-      <h3 className="text-2xl font-bold text-aion-navy mb-4 group-hover:text-aion-coral transition-colors duration-300">{title}</h3>
+      <h3 className="text-2xl font-bold text-aion-navy-700 mb-4 group-hover:text-aion-turquoise-600 transition-colors duration-300">{title}</h3>
       <p className="text-aion-gray-600 leading-relaxed group-hover:text-aion-gray-700 transition-colors duration-300">{description}</p>
     </div>
   )

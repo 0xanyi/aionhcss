@@ -49,73 +49,73 @@ function Header() {
         <nav className="hidden lg:flex lg:ml-auto lg:items-center lg:space-x-8">
           <Link
             to="/"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Home
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/about"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             About
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/services"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Services
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/clients"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Who We Serve
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/resources"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Resources
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/contact"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Contact
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
           <Link
             to="/careers"
-            className="text-gray-700 hover:text-aion-coral transition-all font-medium text-sm relative group"
+            className="text-gray-700 hover:text-aion-turquoise-500 transition-all font-medium text-sm relative group"
             activeProps={{
-              className: 'text-aion-coral font-semibold',
+              className: 'text-aion-turquoise-500 font-semibold',
             }}
           >
             Careers
-            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-aion-coral transition-all group-hover:w-full"></span>
+            <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-aion-turquoise-400 to-aion-teal-500 transition-all group-hover:w-full"></span>
           </Link>
         </nav>
 
@@ -148,9 +148,9 @@ function Header() {
         />
       )}
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Sidebar with Beautiful Turquoise Gradient */}
       <aside
-        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-[#002B7F] to-[#001a4d] text-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${
+        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-aion-turquoise-600 via-aion-teal-600 to-aion-navy-700 text-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out flex flex-col ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -178,7 +178,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <Home size={22} className="group-hover:scale-110 transition-transform" />
@@ -191,7 +191,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
@@ -204,7 +204,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
@@ -217,7 +217,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
@@ -230,7 +230,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
@@ -243,7 +243,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <Phone size={22} className="group-hover:scale-110 transition-transform" />
@@ -256,7 +256,7 @@ function Header() {
             className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all mb-2 group"
             activeProps={{
               className:
-                'flex items-center gap-4 p-4 rounded-xl bg-aion-coral hover:bg-aion-coral/90 transition-all mb-2 group',
+                'flex items-center gap-4 p-4 rounded-xl bg-white/20 backdrop-blur-sm transition-all mb-2 group',
             }}
           >
             <ChevronRight size={22} className="group-hover:translate-x-1 transition-transform" />
