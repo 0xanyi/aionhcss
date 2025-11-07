@@ -56,129 +56,208 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section">
+    <section class="section contact-section">
+        <div class="contact-background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form fade-in">
-                    <h2 style="margin-bottom: 1.5rem; color: var(--dark-gray);">Get In Touch</h2>
-                    <p style="margin-bottom: 2rem; color: var(--gray);">Fill out the form below and we'll get back to you within 24 hours to discuss your care needs.</p>
-                    
+            <div class="contact-header fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you within 24 hours to discuss your care needs.</p>
+            </div>
+
+            <div class="contact-grid-modern">
+                <div class="contact-form-modern fade-in">
+                    <div class="form-header">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-icon">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Send Us a Message</h3>
+                        <p>Complete the form and we'll respond promptly</p>
+                    </div>
+
                     <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Full Name *</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
+
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email Address *</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="0124 5823 377">
+
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Phone Number</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="relation">Your Relationship to Person Needing Care</label>
-                            <select id="relation" name="relation" style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px;">
-                                <option value="">Please select...</option>
-                                <option value="self">I need care for myself</option>
-                                <option value="spouse">Care for my spouse/partner</option>
-                                <option value="parent">Care for my parent</option>
-                                <option value="relative">Care for a relative</option>
-                                <option value="friend">Care for a friend</option>
-                                <option value="professional">I'm a healthcare professional</option>
-                                <option value="other">Other</option>
-                            </select>
+
+                        <div class="form-row">
+                            <div class="form-group-modern select-group">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <select id="relation" name="relation">
+                                    <option value="">Select your relationship...</option>
+                                    <option value="self">I need care for myself</option>
+                                    <option value="spouse">Care for my spouse/partner</option>
+                                    <option value="parent">Care for my parent</option>
+                                    <option value="relative">Care for a relative</option>
+                                    <option value="friend">Care for a friend</option>
+                                    <option value="professional">I'm a healthcare professional</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="relation">Relationship to Person Needing Care</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Service Interest</label>
-                            <select id="service" name="service" style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px;">
-                                <option value="">Please select...</option>
-                                <option value="personal-care">Personal Care</option>
-                                <option value="live-in-care">Live-in Care</option>
-                                <option value="supported-living">Supported Living</option>
-                                <option value="meal-planning">Meal Planning</option>
-                                <option value="household-support">Household Support</option>
-                                <option value="companionship">Companionship</option>
-                                <option value="respite-care">Respite Care</option>
-                                <option value="medication-management">Medication Management</option>
-                                <option value="post-hospital-care">Post-Hospital Care</option>
-                                <option value="not-sure">Not sure - need advice</option>
-                                <option value="multiple">Multiple services</option>
-                            </select>
+
+                        <div class="form-row">
+                            <div class="form-group-modern select-group">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 21v-8H7v8M7 3v5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <select id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="personal-care">Personal Care</option>
+                                    <option value="live-in-care">Live-in Care</option>
+                                    <option value="supported-living">Supported Living</option>
+                                    <option value="meal-planning">Meal Planning</option>
+                                    <option value="household-support">Household Support</option>
+                                    <option value="companionship">Companionship</option>
+                                    <option value="respite-care">Respite Care</option>
+                                    <option value="medication-management">Medication Management</option>
+                                    <option value="post-hospital-care">Post-Hospital Care</option>
+                                    <option value="not-sure">Not sure - need advice</option>
+                                    <option value="multiple">Multiple services</option>
+                                </select>
+                                <label for="service">Service Interest</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="urgency">How urgent is your need?</label>
-                            <select id="urgency" name="urgency" style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px;">
-                                <option value="">Please select...</option>
-                                <option value="emergency">Emergency - need care immediately</option>
-                                <option value="urgent">Urgent - need care within 1-2 weeks</option>
-                                <option value="planned">Planned - looking ahead for future care</option>
-                                <option value="information">Just gathering information</option>
-                            </select>
+
+                        <div class="form-row">
+                            <div class="form-group-modern select-group">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <select id="urgency" name="urgency">
+                                    <option value="">Select urgency level...</option>
+                                    <option value="emergency">Emergency - need care immediately</option>
+                                    <option value="urgent">Urgent - need care within 1-2 weeks</option>
+                                    <option value="planned">Planned - looking ahead for future care</option>
+                                    <option value="information">Just gathering information</option>
+                                </select>
+                                <label for="urgency">How urgent is your need?</label>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Tell us about your care needs *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Please provide details about the person needing care, their specific needs, current situation, and any questions you have..."></textarea>
+
+                        <div class="form-row">
+                            <div class="form-group-modern textarea-group">
+                                <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Tell us about your care needs *</label>
+                            </div>
                         </div>
-                        
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </form>
                 </div>
-                
-                <div class="contact-info fade-in">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="contact-item">
-                        <span>📍</span>
-                        <div>
-                            <strong>Our Office</strong><br>
-                            Terriers Retreat, Woods Road<br>
+
+                <div class="contact-info-modern fade-in">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Our Office</h4>
+                            <p>Terriers Retreat, Woods Road<br>
                             Ford End, Chelmsford<br>
                             Essex CM3 1LJ<br>
-                            United Kingdom
+                            United Kingdom</p>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <span>📞</span>
-                        <div>
-                            <strong>Phone</strong><br>
-                            0124 5823 377<br>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:01245823377">0124 5823 377</a></p>
                             <small>Available 24/7 for emergencies</small>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <span>✉️</span>
-                        <div>
-                            <strong>Email</strong><br>
-                            info@aionhcss.com<br>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@aionhcss.com">info@aionhcss.com</a></p>
                             <small>We respond within 24 hours</small>
                         </div>
                     </div>
-                    
-                    <div class="contact-item">
-                        <span>🕒</span>
-                        <div>
-                            <strong>Office Hours</strong><br>
-                            Monday - Friday: 9:00 AM - 5:00 PM<br>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
                             Saturday: 9:00 AM - 1:00 PM<br>
-                            Sunday: Emergency calls only<br>
+                            Sunday: Emergency calls only</p>
                             <small>24/7 Emergency Support Available</small>
                         </div>
                     </div>
-                    
-                    <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(255,255,255,0.1); border-radius: 8px;">
-                        <h4 style="margin-bottom: 1rem;">Free Consultation</h4>
-                        <p style="margin-bottom: 1rem;">We offer a completely free, no-obligation consultation to discuss your care needs and how we can help.</p>
-                        <p><strong>What to expect:</strong></p>
-                        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+
+                    <div class="consultation-cta">
+                        <div class="cta-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h4>Free Consultation</h4>
+                        <p>We offer a completely free, no-obligation consultation to discuss your care needs and how we can help.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem; text-align: left;">
                             <li>Assessment of care needs</li>
                             <li>Discussion of suitable services</li>
                             <li>Explanation of our approach</li>
@@ -194,69 +273,115 @@
     <!-- Service Areas -->
     <section class="section section-gray">
         <div class="container">
-            <h2 class="section-title fade-in">Areas We Serve</h2>
-            <p class="section-subtitle fade-in">We provide home care and supported living services across Essex and the East of England from our base in Chelmsford.</p>
-            
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">📍</div>
-                    <h3>Chelmsford</h3>
-                    <p>Our home base where we maintain strong community connections and provide comprehensive local services with deep understanding of the area.</p>
+            <div class="about-header-modern fade-in">
+                <h2 class="about-title-modern">
+                    Areas <span class="text-gradient">We Serve</span>
+                </h2>
+                <p class="section-subtitle">We provide home care and supported living services across Essex and the East of England from our base in Chelmsford.</p>
+            </div>
+
+            <div class="services-grid-modern">
+                <div class="service-card-modern fade-in">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Chelmsford</h3>
+                        <p>Our home base where we maintain strong community connections and provide comprehensive local services with deep understanding of the area.</p>
+                    </div>
                 </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">🗺️</div>
-                    <h3>Essex County</h3>
-                    <p>Wide coverage across Essex including Chelmsford, Maldon, Braintree, Colchester, and surrounding towns and rural communities.</p>
+
+                <div class="service-card-modern fade-in">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Essex County</h3>
+                        <p>Wide coverage across Essex including Chelmsford, Maldon, Braintree, Colchester, and surrounding towns and rural communities.</p>
+                    </div>
                 </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-icon">🏘️</div>
-                    <h3>East of England</h3>
-                    <p>Extending our services across the wider East of England region, ensuring more families have access to quality home care and support.</p>
+
+                <div class="service-card-modern fade-in">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <h3>East of England</h3>
+                        <p>Extending our services across the wider East of England region, ensuring more families have access to quality home care and support.</p>
+                    </div>
                 </div>
             </div>
-            
-            <div style="text-align: center; margin-top: 3rem;" class="fade-in">
-                <h3 style="margin-bottom: 1rem; color: var(--dark-gray);">Service Radius</h3>
-                <p style="font-size: 1.1rem; color: var(--gray); max-width: 600px; margin: 0 auto 2rem;">
-                    We provide services within a <strong>90-mile radius</strong> of our office in Ford End, Chelmsford. 
+
+            <div class="about-cta-modern fade-in" style="margin-top: 3rem;">
+                <p style="font-size: 1.1rem; color: var(--gray); max-width: 700px; margin: 0 auto 2rem; text-align: center; line-height: 1.8;">
+                    We provide services within a <strong>90-mile radius</strong> of our office in Ford End, Chelmsford.
                     If you're unsure whether we cover your area, please don't hesitate to contact us.
                 </p>
-                <a href="tel:01245823377" class="btn btn-primary">Call to Check Your Area</a>
+                <a href="tel:01245823377" class="btn btn-primary btn-glow">
+                    <span>Call to Check Your Area</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- How to Get Started -->
-    <section class="section">
+    <section class="section about-section-modern">
+        <div class="about-background-pattern"></div>
+
         <div class="container">
-            <h2 class="section-title fade-in">How to Get Started</h2>
-            <p class="section-subtitle fade-in">Our simple process to get you the care and support you need.</p>
-            
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div style="width: 60px; height: 60px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem;">1</div>
-                    <h3>Contact Us</h3>
-                    <p>Call, email, or fill out our contact form to express your interest in our services. We'll arrange a time that suits you for an initial conversation.</p>
+            <div class="about-header-modern fade-in">
+                <h2 class="about-title-modern">
+                    How to <span class="text-gradient">Get Started</span>
+                </h2>
+                <p class="section-subtitle">Our simple process to get you the care and support you need.</p>
+            </div>
+
+            <div class="about-content-grid fade-in">
+                <div class="about-story-card">
+                    <div class="story-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="story-content">
+                        <h3>1. Contact Us</h3>
+                        <p>Call, email, or fill out our contact form to express your interest in our services. We'll arrange a time that suits you for an initial conversation.</p>
+                    </div>
                 </div>
-                
-                <div class="service-card fade-in">
-                    <div style="width: 60px; height: 60px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem;">2</div>
-                    <h3>Free Consultation</h3>
-                    <p>We visit you in your home for a free, no-obligation consultation to understand your needs, preferences, and circumstances in detail.</p>
+
+                <div class="about-story-card">
+                    <div class="story-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="story-content">
+                        <h3>2. Free Consultation</h3>
+                        <p>We visit you in your home for a free, no-obligation consultation to understand your needs, preferences, and circumstances in detail.</p>
+                    </div>
                 </div>
-                
-                <div class="service-card fade-in">
-                    <div style="width: 60px; height: 60px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem;">3</div>
-                    <h3>Care Plan</h3>
-                    <p>Based on our assessment, we create a personalized care plan and provide a detailed quote with no hidden costs or surprises.</p>
+
+                <div class="about-story-card">
+                    <div class="story-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="story-content">
+                        <h3>3. Care Plan</h3>
+                        <p>Based on our assessment, we create a personalized care plan and provide a detailed quote with no hidden costs or surprises.</p>
+                    </div>
                 </div>
-                
-                <div class="service-card fade-in">
-                    <div style="width: 60px; height: 60px; background: var(--primary-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem;">4</div>
-                    <h3>Care Begins</h3>
-                    <p>If you're happy with our proposal, we match you with a carefully selected care worker and begin delivering your personalized care service.</p>
+
+                <div class="about-story-card">
+                    <div class="story-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="story-content">
+                        <h3>4. Care Begins</h3>
+                        <p>If you're happy with our proposal, we match you with a carefully selected care worker and begin delivering your personalized care service.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,14 +390,29 @@
     <!-- Emergency Contact -->
     <section class="section section-gray">
         <div class="container">
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;" class="fade-in">
-                <h2 style="margin-bottom: 1.5rem; color: var(--dark-gray);">Need Care Urgently?</h2>
-                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--gray); margin-bottom: 2rem;">
-                    We understand that care needs can arise suddenly. If you need support urgently, please call us directly and we'll do our best to arrange care as quickly as possible.
-                </p>
+            <div class="about-cta-modern fade-in" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <div class="about-header-modern">
+                    <h2 class="about-title-modern">
+                        Need Care <span class="text-gradient">Urgently?</span>
+                    </h2>
+                    <p class="section-subtitle" style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 2.5rem;">
+                        We understand that care needs can arise suddenly. If you need support urgently, please call us directly and we'll do our best to arrange care as quickly as possible.
+                    </p>
+                </div>
+
                 <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="tel:01245823377" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">Call Now: 0124 5823 377</a>
-                    <a href="mailto:info@aionhcss.com" class="btn btn-secondary" style="font-size: 1.1rem; padding: 15px 30px;">Email Us</a>
+                    <a href="tel:01245823377" class="btn btn-primary btn-glow">
+                        <span>Call Now: 0124 5823 377</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:info@aionhcss.com" class="btn" style="background: white; color: var(--primary-blue); border: 2px solid var(--primary-blue); box-shadow: 0 4px 12px rgba(0, 0, 113, 0.1);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Email Us</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -281,35 +421,94 @@
     <!-- FAQ Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
-            <p class="section-subtitle fade-in">Common questions about our services and how we can help.</p>
-            
-            <div class="about-grid">
-                <div class="about-content fade-in">
-                    <h3>How quickly can care start?</h3>
+            <div class="about-header-modern fade-in">
+                <h2 class="about-title-modern">
+                    Frequently Asked <span class="text-gradient">Questions</span>
+                </h2>
+                <p class="section-subtitle">Common questions about our services and how we can help.</p>
+            </div>
+
+            <div class="values-grid-modern" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 1200px; margin: 0 auto;">
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>How quickly can care start?</h4>
                     <p>We can typically arrange care within 24-48 hours for urgent situations, or within a few days for planned care arrangements. We'll work with you to meet your timeline.</p>
-                    
-                    <h3>Are your care workers DBS checked?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Are your care workers DBS checked?</h4>
                     <p>Yes, all our care workers undergo thorough DBS (Disclosure and Barring Service) checks and comprehensive background screening before joining our team.</p>
-                    
-                    <h3>What if I don't get on with my care worker?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>What if I don't get on with my care worker?</h4>
                     <p>We carefully match care workers to clients, but if the match isn't right, we'll arrange a different care worker who better suits your personality and needs.</p>
-                    
-                    <h3>Do you provide care at weekends?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Do you provide care at weekends?</h4>
                     <p>Yes, we provide care 7 days a week, including weekends and bank holidays, to ensure consistent support when you need it.</p>
                 </div>
-                
-                <div class="about-content fade-in">
-                    <h3>How much does care cost?</h3>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2v6M12 18v6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M18 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>How much does care cost?</h4>
                     <p>Care costs vary depending on your specific needs and the level of support required. We provide transparent, detailed quotes with no hidden costs. Contact us for a free assessment and personalized quote.</p>
-                    
-                    <h3>Can you help with funding information?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Can you help with funding information?</h4>
                     <p>Yes, we can provide information about funding options including local authority funding, direct payments, and private funding options to help make care more affordable.</p>
-                    
-                    <h3>Do you cover my area?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Do you cover my area?</h4>
                     <p>We provide services within a 90-mile radius of our Chelmsford office. If you're unsure whether we cover your area, please call us to check.</p>
-                    
-                    <h3>What happens in an emergency?</h3>
+                </div>
+
+                <div class="value-card-modern fade-in">
+                    <div class="value-icon-wrapper">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 9v4M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>What happens in an emergency?</h4>
                     <p>We provide 24/7 emergency support. If you have an emergency or urgent care need outside office hours, you can reach us on our emergency line.</p>
                 </div>
             </div>
