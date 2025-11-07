@@ -262,18 +262,18 @@ body {
 /* Page Hero (slimmer banner for non-home pages) */
 .page-hero {
     position: relative;
-    min-height: 340px;
+    min-height: 480px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 220px 0 80px; /* consistent padding for nav offset + top space for title placement */
+    align-items: center;
+    justify-content: center;
+    padding: 220px 0 100px; /* consistent padding for nav offset + top space for title placement */
     color: var(--white);
     overflow: hidden;
 }
 
 .page-hero.small {
-    min-height: 340px;
-    padding: 220px 0 80px;
+    min-height: 420px;
+    padding: 220px 0 90px;
 }
 
 .page-hero-background {
@@ -282,24 +282,32 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 1;
-    filter: brightness(0.85);
+    filter: brightness(0.75) contrast(1.05);
+    transition: transform 0.3s ease;
+}
+
+.page-hero:hover .page-hero-background {
+    transform: scale(1.02);
 }
 
 .page-hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(0,0,113,0.75) 0%, rgba(0,0,80,0.65) 60%, rgba(0,0,50,0.55) 100%);
+    background: linear-gradient(135deg, rgba(0,0,113,0.88) 0%, rgba(0,0,80,0.78) 50%, rgba(0,0,60,0.70) 100%);
     z-index: 2;
 }
 
 .page-hero .container { position: relative; z-index: 3; }
 
-.page-hero-content { 
-    max-width: 900px;
+.page-hero-content {
+    max-width: 950px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 0;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
 }
 
 .page-hero-content * { margin: 0; padding: 0; }
@@ -308,43 +316,46 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.12);
-    padding: 0.5rem 1rem;
-    border-radius: 40px;
-    font-size: 0.75rem;
-    letter-spacing: 1.5px;
-    font-weight: 600;
+    background: rgba(255,255,255,0.18);
+    padding: 0.6rem 1.3rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
     text-transform: uppercase;
-    backdrop-filter: blur(6px);
-    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    margin: 0 auto 1.5rem;
     width: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .page-hero h1 {
-    font-size: clamp(2.4rem, 5vw, 3rem);
-    line-height: 1.15;
+    font-size: clamp(2.5rem, 5.5vw, 3.5rem);
+    line-height: 1.12;
     font-weight: 800;
-    letter-spacing: -0.5px;
-    margin: 0 0 0.8rem 0;
+    letter-spacing: -1px;
+    margin: 0 0 1.2rem 0;
     text-wrap: balance;
     padding: 0;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
 .page-hero h1 span.gradient {
-    background: linear-gradient(90deg, var(--accent-color), #ff9091);
+    background: linear-gradient(120deg, #ffffff 0%, #ffd4d5 50%, var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .page-hero p.subtitle {
-    font-size: 1.1rem;
-    max-width: 720px;
-    line-height: 1.8;
-    opacity: 0.95;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.9;
+    opacity: 0.98;
     font-weight: 400;
-    margin: 0;
-    padding: 0;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.2);
 }
 
 .page-hero-meta {
@@ -360,10 +371,21 @@ body {
 .page-hero-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
 
 .page-hero.decor-dots::before {
-    background: linear-gradient(135deg, rgba(0,0,113,0.85) 0%, rgba(0,0,80,0.75) 60%, rgba(0,0,50,0.65) 100%),
-        radial-gradient(circle at 75% 35%, rgba(255,91,92,0.18) 0%, transparent 60%),
-        radial-gradient(circle at 15% 75%, rgba(255,255,255,0.15) 0%, transparent 55%);
+    background: linear-gradient(135deg, rgba(0,0,113,0.92) 0%, rgba(0,0,80,0.82) 50%, rgba(0,0,60,0.75) 100%),
+        radial-gradient(circle at 80% 20%, rgba(255,91,92,0.25) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.12) 0%, transparent 45%),
+        radial-gradient(circle at 50% 50%, rgba(255,91,92,0.08) 0%, transparent 70%);
     mix-blend-mode: normal;
+}
+
+.page-hero.decor-dots::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 90% 10%, rgba(255,144,145,0.15) 0%, transparent 40%),
+                radial-gradient(circle at 10% 90%, rgba(255,255,255,0.08) 0%, transparent 35%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .page-hero.pattern-overlay::after {
@@ -377,17 +399,13 @@ body {
 }
 
 /* Decorative subtle bottom curve (optional) */
-.page-hero.curved::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 70px;
-    background: radial-gradient(circle at 10% 0%, rgba(255,255,255,0.35) 0%, transparent 60%),
-                linear-gradient(to bottom, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.9) 95%);
-    z-index: 3;
-    pointer-events: none;
+.page-hero.curved {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.page-hero.curved .page-hero-content {
+    position: relative;
+    z-index: 4;
 }
 
 /* Mobile adjustments for compact header & page hero */
@@ -397,17 +415,17 @@ body {
         background: var(--primary-blue);
     }
     .site-header.compact .nav-link::after { background: var(--white); }
-    .page-hero { min-height: 320px; padding: 200px 0 70px; }
-    .page-hero.small { min-height: 320px; padding: 200px 0 70px; }
-    .page-hero h1 { font-size: clamp(2rem, 6vw, 2.4rem); }
-    .page-hero p.subtitle { font-size: 1rem; }
-    .page-hero-label { font-size: 0.65rem; padding: 0.45rem 0.9rem; margin-bottom: 0.8rem; }
+    .page-hero { min-height: 400px; padding: 200px 0 80px; }
+    .page-hero.small { min-height: 360px; padding: 200px 0 75px; }
+    .page-hero h1 { font-size: clamp(2.2rem, 6vw, 2.8rem); }
+    .page-hero p.subtitle { font-size: 1.05rem; }
+    .page-hero-label { font-size: 0.7rem; padding: 0.5rem 1rem; margin-bottom: 1rem; }
 }
 @media (max-width: 480px) {
-    .page-hero { min-height: 280px; padding: 180px 0 60px; }
-    .page-hero.small { min-height: 280px; padding: 180px 0 60px; }
-    .page-hero h1 { font-size: 1.9rem; margin-bottom: 0.6rem; }
-    .page-hero p.subtitle { font-size: 0.95rem; }
+    .page-hero { min-height: 360px; padding: 180px 0 70px; }
+    .page-hero.small { min-height: 320px; padding: 180px 0 65px; }
+    .page-hero h1 { font-size: 2rem; margin-bottom: 0.8rem; }
+    .page-hero p.subtitle { font-size: 1rem; }
 }
 
 .hero-content {
