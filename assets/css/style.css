@@ -444,7 +444,7 @@ body {
     bottom: 0;
     background:
         linear-gradient(135deg, rgba(0, 0, 113, 0.92) 0%, rgba(0, 0, 80, 0.88) 50%, rgba(0, 0, 113, 0.85) 100%),
-        url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        url('../images/helper-caring-for-elderly-lady.webp');
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
