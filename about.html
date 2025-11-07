@@ -10,28 +10,47 @@
     <link rel="icon" type="image/png" href="res/aion_icon.png">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="nav-container">
-                <img src="res/aion_logo_blue.png" alt="Aion Health Care & Support Services" class="logo">
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-                <button class="nav-toggle">☰</button>
-            </nav>
+    <!-- Header (two-tier like Home) -->
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <div class="top-bar-left">
+                    <span class="top-item">📞 0124 5823 377</span>
+                    <span class="divider"></span>
+                    <span class="top-item">✉️ info@aionhcss.com</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="contact.html" class="top-link">Free Consultation</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav-wrapper">
+            <div class="container">
+                <nav class="nav-container">
+                    <img src="res/aion_logo_blue.png" alt="Aion Health Care & Support Services" class="logo">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="contact.html" class="btn btn-nav">Get Care</a>
+                        <button class="nav-toggle">☰</button>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="hero" style="padding: 120px 0 80px; background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);">
+    <!-- Page Banner -->
+    <section class="page-hero curved decor-dots">
+        <div class="page-hero-background" style="background-image:url('https://images.unsplash.com/photo-1526253038957-bce54e05968f?q=80&w=2070&auto=format&fit=crop');"></div>
         <div class="container">
-            <div class="hero-content fade-in">
-                <h1>About Aion Health Care & Support Services</h1>
-                <p>Compassionate, professional healthcare with over 21 years of combined experience serving families across Essex and the East of England.</p>
+            <div class="page-hero-content">
+                <span class="page-hero-label">About Us</span>
+                <h1><span class="gradient">About Aion Health Care & Support Services</span></h1>
+                <p class="subtitle">Compassionate, professional healthcare with over 21 years of combined experience serving families across Essex and the East of England.</p>
             </div>
         </div>
     </section>
