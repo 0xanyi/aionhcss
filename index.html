@@ -16,27 +16,64 @@
             <nav class="nav-container">
                 <img src="res/aion_logo_blue.png" alt="Aion Health Care & Support Services" class="logo">
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-                <button class="nav-toggle">☰</button>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-nav">Free Consultation</a>
+                    <button class="nav-toggle">☰</button>
+                </div>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-image-overlay"></div>
+        <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content fade-in">
-                <h1>Care That Respects, Services That Empower</h1>
-                <p>Compassionate, professional home care and supported living services across Essex and the East of England. We empower our clients to live independently, safely, and with dignity in their own homes.</p>
-                <div style="margin-top: 2rem;">
-                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-                    <a href="services.html" class="btn btn-secondary">Our Services</a>
+                <div class="hero-badge">24/7 Care & Support</div>
+                <h1>Care That Respects, <br><span class="hero-highlight">Services That Empower</span></h1>
+                <p class="hero-description">Compassionate, professional home care and supported living services across Essex and the East of England. We empower our clients to live independently, safely, and with dignity in their own homes.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 18.333a8.333 8.333 0 1 0 0-16.666 8.333 8.333 0 0 0 0 16.666z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 10l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Our Services</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <strong>21+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>24/7</strong>
+                        <span>Emergency Support</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>100%</strong>
+                        <span>Personalized Care</span>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </section>
 
