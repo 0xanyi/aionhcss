@@ -2,9 +2,10 @@
 
 /* CSS Variables for consistent theming */
 :root {
-    --primary-blue: #2563eb;
-    --light-blue: #3b82f6;
-    --dark-blue: #1e40af;
+    --primary-blue: #000071;
+    --light-blue: #ff5b5c;
+    --dark-blue: #000050;
+    --accent-color: #ff5b5c;
     --light-gray: #f8fafc;
     --gray: #64748b;
     --dark-gray: #334155;
@@ -128,7 +129,7 @@ body {
 .btn-nav:hover {
     background: var(--dark-blue);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 113, 0.4);
 }
 
 .nav-toggle {
@@ -162,10 +163,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+    background: linear-gradient(135deg, #000071 0%, #000071 50%, #000090 100%);
     background-image:
         url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'),
-        linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(37, 99, 235, 0.9) 50%, rgba(59, 130, 246, 0.85) 100%);
+        linear-gradient(135deg, rgba(0, 0, 113, 0.95) 0%, rgba(0, 0, 113, 0.9) 50%, rgba(0, 0, 144, 0.85) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
@@ -189,7 +190,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+    background: radial-gradient(circle at 30% 50%, rgba(255, 91, 92, 0.15) 0%, transparent 70%);
     z-index: 2;
 }
 
@@ -242,7 +243,7 @@ body {
 }
 
 .hero-highlight {
-    background: linear-gradient(to right, #ffffff, #e0f2fe);
+    background: linear-gradient(to right, #ffffff, #ffd4d5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -350,7 +351,7 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
-    background: linear-gradient(to right, #ffffff, #e0f2fe);
+    background: linear-gradient(to right, #ffffff, #ffd4d5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
