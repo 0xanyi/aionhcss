@@ -924,8 +924,8 @@ body {
 /* Modern Services Grid with Images */
 .services-grid-modern {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
     margin-top: 3rem;
 }
 
@@ -1305,7 +1305,27 @@ body {
     font-weight: bold;
 }
 
-/* Responsive Design */
+/* Tablet Responsive Design */
+@media (max-width: 1024px) {
+    .services-grid-modern {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-image {
+        height: 220px;
+    }
+
+    .service-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1435,7 +1455,16 @@ body {
     }
 
     .service-content h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+
+    .service-content p {
+        font-size: 0.9rem;
+    }
+
+    .service-badge {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.85rem;
     }
 
     .values-grid {
