@@ -987,7 +987,6 @@ body {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
     flex-grow: 1;
 }
 
@@ -996,32 +995,26 @@ body {
 }
 
 .service-content h3 {
-    display: block;
     font-size: 1.6rem;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
     color: var(--dark-gray);
     font-weight: 800;
     line-height: 1.3;
     letter-spacing: -0.5px;
     width: 100%;
-    flex-basis: 100%;
-    min-width: 0;
 }
 
 .service-content p {
-    display: block;
     color: var(--gray);
     line-height: 1.7;
     font-size: 0.95rem;
-    margin: 0.25rem 0 0 0;
+    margin: 0 0 1.5rem 0;
     flex-grow: 1;
     width: 100%;
-    flex-basis: 100%;
-    min-width: 0;
 }
 
 .service-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--primary-blue);
@@ -1055,25 +1048,39 @@ body {
     align-items: center;
 }
 
+/* Slimmer right image for About section on homepage */
+.about-modern {
+    grid-template-columns: minmax(0, 1fr) 420px;
+    align-items: start;
+}
+
 .about-image {
     width: 100%;
-    height: 400px;
+    height: 460px;
     object-fit: cover;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
 }
 
+.about-modern .about-image {
+    height: 340px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
 .about-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
     color: var(--dark-gray);
+    line-height: 1.15;
 }
 
 .about-content p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
     color: var(--gray);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    max-width: 680px;
 }
 
 .values-grid {
@@ -1085,12 +1092,48 @@ body {
 
 .value-item {
     text-align: center;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .value-item h4 {
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
+}
+
+/* Modernized About styles */
+.about-modern .value-item.card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-modern .value-item.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.text-gradient {
+    background: linear-gradient(120deg, #000071 0%, #ff5b5c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 1024px) {
+    .about-modern { grid-template-columns: minmax(0,1fr) 360px; }
+    .about-modern .about-image { height: 300px; }
+}
+
+@media (max-width: 900px) {
+    .about-modern { grid-template-columns: minmax(0,1fr) 320px; }
+    .about-modern .about-image { height: 280px; }
+}
+
+@media (max-width: 768px) {
+    .about-modern { grid-template-columns: 1fr; }
+    .about-modern .about-image { height: 320px; margin-top: 1.5rem; }
 }
 
 /* Contact Section */
@@ -1099,6 +1142,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
 
 .contact-form {
     background: var(--white);
@@ -1244,7 +1290,7 @@ body {
     color: var(--dark-gray);
 }
 
-.service-content {
+.service-detail .service-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
@@ -1308,7 +1354,7 @@ body {
         height: 220px;
     }
 
-    .service-content h3 {
+    .services-grid-modern .service-content h3 {
         font-size: 1.4rem;
     }
 
@@ -1420,7 +1466,7 @@ body {
 
     .about-grid,
     .contact-grid,
-    .service-content {
+    .service-detail .service-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -1442,15 +1488,15 @@ body {
         height: 200px;
     }
 
-    .service-content {
+    .services-grid-modern .service-content {
         padding: 1.5rem;
     }
 
-    .service-content h3 {
+    .services-grid-modern .service-content h3 {
         font-size: 1.3rem;
     }
 
-    .service-content p {
+    .services-grid-modern .service-content p {
         font-size: 0.9rem;
     }
 
@@ -1538,15 +1584,15 @@ body {
         height: 180px;
     }
 
-    .service-content {
+    .services-grid-modern .service-content {
         padding: 1.25rem;
     }
 
-    .service-content h3 {
+    .services-grid-modern .service-content h3 {
         font-size: 1.3rem;
     }
 
-    .service-content p {
+    .services-grid-modern .service-content p {
         font-size: 0.9rem;
     }
 
@@ -1558,6 +1604,9 @@ body {
     .values-grid {
         grid-template-columns: 1fr;
     }
+    .about-image { height: 260px; }
+    .about-grid {
+        grid-template-columns: 1fr;
 
     .particle {
         width: 3px;
